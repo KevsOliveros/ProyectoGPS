@@ -1,0 +1,175 @@
+.opcionMenu {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #186FA6;
+	margin-top: 3%;
+	height: 40px;
+	float: left;
+}
+
+.iconoMenu {
+	float: left;
+	margin-left: 10%;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	height: 26px;
+}
+
+.tituloOpcionMenu {
+	float: left;
+	margin-left: 5%;
+	font-size: 26px;
+	margin-bottom: 7px;
+	color: white;
+}
+
+.submenu {
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 1%;
+	float: left;
+	display: none;
+}
+
+.subOpcionMenu {
+	width: 100%;
+	background-color: #186FA6;
+	margin-top: 1%;
+	height: 40px;
+	float: left;
+}
+
+.subIconoMenu {
+	float: left;
+	margin-left: 10%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 20px;
+}
+
+.tituloSubOpcionMenu {
+	float: left;
+	margin-left: 5%;
+	font-size: 20px;
+	margin-top: 4px;
+	color: white;
+}
+
+#nuevoArticulo {
+	background-color: #53E69D;
+}
+
+#editarArticulo {
+	background-color: #FFC36D;
+}
+
+#eliminarArticulo {
+	background-color: #FF7676;
+}
+
+#buscarArticulo {
+	background-color: #A88ADD;
+}
+
+#abrirListaPedidos {
+	background-color: #0CC2AA;
+}
+
+#venderStock {
+	background-color: #336597;
+}
+
+#recibirStock {
+	background-color: #FF3366;
+}
+
+#pedirStock {
+	background-color: #2CABE3;
+}
+
+#devolverStock {
+	background-color: #4C5667;
+}
+
+#nuevoDepto {
+	background-color: #53E69D;
+}
+
+#abrirDeptos {
+	background-color: #FF7676;
+}
+
+#nuevoAlmacen {
+	background-color: #53E69D;
+}
+
+#abrirListaAlmacen {
+	background-color: #FF7676;
+}
+
+#nuevoProveedor {
+	background-color: #53E69D;
+}
+
+#abrirListaProveedor {
+	background-color: #FF7676;
+}
+
+#nuevoCliente {
+	background-color: #53E69D;
+}
+
+#abrirListaCliente {
+	background-color: #FF7676;
+}
+
+#verInforme {
+	background-color: #53E69D;
+}
+
+#verInformeAyD {
+	background-color: #FFC36D;
+}
+
+#verInformeAyD p {
+	font-size: 13px;
+	margin-top: 11px;
+}
+
+#verInformePP {
+	background-color: #FF7676;
+}
+
+#verInformePP p {
+	font-size: 10px;
+	margin-top: 14px;
+}
+
+#verInformePedP p {
+	font-size: 13px;
+	margin-top: 11px;
+}
+
+#verInformePedP {
+	background-color: #A88ADD;
+}
+
+#verInformeV {
+	background-color: #0CC2AA;
+}
+
+#verGrafica {
+	background-color: #53E69D;
+}
+
+#verCronograma {
+	background-color: #FF7676;
+}
+
+#verCronograma p{
+	font-size: 13px;
+	margin-top: 11px;
+}

@@ -1,0 +1,85 @@
+#dashboard {
+      width: 80%;
+      margin-left: 0%;
+      position: absolute;
+      z-index: 0;
+      right: 100%;
+}
+
+.dopcionMenu {
+      width: 100%;
+      background-color: black;
+      border-bottom: 1px solid white;
+      height: 40px;
+      float: left;
+}
+
+.diconoMenu {
+      float: left;
+      margin-left: 10%;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      height: 26px;
+}
+
+.dtituloOpcionMenu {
+      float: left;
+      margin-left: 5%;
+      font-size: 26px;
+      margin-bottom: 7px;
+      color: white;
+}
+
+
+
+.dsubIconoMenu {
+      float: left;
+      margin-left: 10%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 20px;
+}
+
+.dtituloSubOpcionMenu {
+      float: left;
+      margin-left: 5%;
+      font-size: 15px;
+      margin-top: 4px;
+      color: white;
+}
+
+#dverInformeAyD p {
+      font-size: 5px;
+      margin-top: 11px;
+}
+
+
+#dverInformePedP p {
+      font-size: 5px;
+      margin-top: 11px;
+}
+
+
+#dverCronograma p{
+      font-size: 13px;
+      margin-top: 11px;
+}
+
+.dsubmenu {
+      width: 95%;
+      height: auto;
+      float: left;
+      background-color: black;
+      display: none;
+      font-size: 5px;
+}
+
+.dsubOpcionMenu {
+      width: 100%;
+      background-color: black;
+      border-bottom: 1px solid white;
+      margin-top: 1%;
+      height: 40px;
+      float: left;
+      font-size: 5px;
+}

@@ -1,0 +1,26 @@
+body {
+	background-color: #333333;
+	font-family: 'Raleway', sans-serif;
+}
+
+label {
+	color: white;
+}
+
+#formulario {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 40%;
+}
+
+#entrar {
+	width: 100%;
+	background-color: #53E69D;
+	color: white;
+}
+
+#titulo {
+	color: #2CABE3;
+	text-align: center;
+}
