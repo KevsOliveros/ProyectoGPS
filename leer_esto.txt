@@ -1,11 +1,11 @@
-Proyeto de GPS: Sistema de inventarios para el hospital Star MÈdica Lomas Verdes
+Proyeto de GPS: Sistema de inventarios para el hospital Star M√©dica Lomas Verdes
 
 Equipo: KND
 
 Colaboradores:
 
 - Kevin Abiud Oliveros Herrera (Listo)
-- CÈsar Alan HolguÌn Sagrero.
-- Gabriel MartÌnez GutiÈrrez.
-- Mauricio Peregrino S·nchez
-- Irving Iv·n Moreno CalderÛn
+- C√©sar Alan Holgu√≠n Sagrero.
+- Gabriel Mart√≠nez Guti√©rrez.
+- Mauricio Peregrino S√°nchez
+- Irving Iv√°n Moreno Calder√≥n (Listo)
