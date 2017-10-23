@@ -4,7 +4,7 @@ Equipo: KND
 
 Colaboradores:
 
-- Kevin Abiud Oliveros Herrera
+- Kevin Abiud Oliveros Herrera (Listo)
 - César Alan Holguín Sagrero.
 - Gabriel Martínez Gutiérrez.
 - Mauricio Peregrino Sánchez
