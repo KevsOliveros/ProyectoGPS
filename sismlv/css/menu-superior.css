@@ -11,7 +11,7 @@
 
 #nombre h1 {
 	font-size: 2em;
-	margin: 5% 0; 
+	margin: 5% 0;
 	padding: 0;
 	color: white;
 }
@@ -34,6 +34,7 @@
 	height: 1px;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 #mensajeNombre p {

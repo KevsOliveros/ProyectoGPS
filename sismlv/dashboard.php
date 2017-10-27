@@ -60,14 +60,18 @@
 			<p class="dtituloOpcionMenu">Almacén</p>
 		</div>
 		<div class="dsubmenu" id="dsubmenuAlmacen">
-			<div class="dsubOpcionMenu" id="dnuevoAlmacen">
-				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoAlmacen">
-				<p class="dtituloSubOpcionMenu">Nuevo Almacén</p>
-			</div>
-			<div class="dsubOpcionMenu" id="dabrirListaAlmacen">
-				<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaAlmacen">
-				<p class="dtituloSubOpcionMenu">Abrir Lista</p>
-			</div>
+			<a href="almacen-nuevo.php">
+				<div class="dsubOpcionMenu" id="dnuevoAlmacen">
+					<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoAlmacen">
+					<p class="dtituloSubOpcionMenu">Nuevo Almacén</p>
+				</div>
+			</a>
+			<a href="almacen-lista.php">
+				<div class="dsubOpcionMenu" id="dabrirListaAlmacen">
+					<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaAlmacen">
+					<p class="dtituloSubOpcionMenu">Abrir Lista</p>
+				</div>
+			</a>
 		</div>
 		<div class="dopcionMenu" id="dproveedor">
 			<img class="diconoMenu" src="images/iconos/proveedor.png" alt="inventario">

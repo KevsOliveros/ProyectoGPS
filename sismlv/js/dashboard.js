@@ -27,7 +27,7 @@ $(document).ready(function(){
         }
         else {
          if(abierto == true) {
-            ocultar();
+            ocultarDashboard();
          }
          $("#dsubmenuInventario").slideDown(300);
          abierto = true;
@@ -40,7 +40,7 @@ $(document).ready(function(){
         }
         else {
          if(abierto == true) {
-            ocultar();
+            ocultarDashboard();
          }
          $("#dsubmenuDeptoArea").slideDown(300);
          abierto = true;
@@ -53,7 +53,7 @@ $(document).ready(function(){
         }
         else {
          if(abierto == true) {
-            ocultar();
+            ocultarDashboard();
          }
          $("#dsubmenuAlmacen").slideDown(300);
          abierto = true;
@@ -66,7 +66,7 @@ $(document).ready(function(){
         }
         else {
          if(abierto == true) {
-            ocultar();
+            ocultarDashboard();
          }
          $("#dsubmenuProveedor").slideDown(300);
          abierto = true;
@@ -79,7 +79,7 @@ $(document).ready(function(){
         }
         else {
          if(abierto == true) {
-            ocultar();
+            ocultarDashboard();
          }
          $("#dsubmenuCliente").slideDown(300);
          abierto = true;
@@ -92,7 +92,7 @@ $(document).ready(function(){
         }
         else {
          if(abierto == true) {
-            ocultar();
+            ocultarDashboard();
          }
          $("#dsubmenuInforme").slideDown(300);
          abierto = true;
@@ -105,15 +105,15 @@ $(document).ready(function(){
         }
         else {
          if(abierto == true) {
-            ocultar();
+            ocultarDashboard();
          }
          $("#dsubmenuGrafica").slideDown(300);
          abierto = true;
         }
     });
 });
-function ocultar() {
-   $("#dsubmenuInventario").slideUp(300);
+function ocultarDashboard() {
+    $("#dsubmenuInventario").slideUp(300);
     $("#dsubmenuDeptoArea").slideUp(300);
     $("#dsubmenuAlmacen").slideUp(300);
     $("#dsubmenuProveedor").slideUp(300);
