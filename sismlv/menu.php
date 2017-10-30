@@ -71,14 +71,14 @@
 			<p class="tituloOpcionMenu">Depto. y Área</p>
 		</div>
 		<div class="submenu" id="submenuDeptoArea">
-			<div class="subOpcionMenu" id="nuevoDepto">
+			<a href="depto-nuevo.php"><div class="subOpcionMenu" id="nuevoDepto">
 				<img class="subIconoMenu" src="images/iconos/nuevo.png" alt="nuevoDepto">
 				<p class="tituloSubOpcionMenu">Nuevo Depto. y Área</p>
-			</div>
-			<div class="subOpcionMenu" id="abrirDeptos">
+                </div></a>
+			<a href="depto-lista.php"><div class="subOpcionMenu" id="abrirDeptos">
 				<img class="subIconoMenu" src="images/iconos/ver.png" alt="abrirDeptos">
 				<p class="tituloSubOpcionMenu">Abrir lista de deptos.</p>
-			</div>
+                </div></a>
 		</div>
 		<div class="opcionMenu" id="almacen">
 			<img class="iconoMenu" src="images/iconos/almacen.png" alt="inventario">

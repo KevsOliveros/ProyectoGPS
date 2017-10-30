@@ -46,14 +46,18 @@
 			<p class="dtituloOpcionMenu">Depto. y Área</p>
 		</div>
 		<div class="dsubmenu" id="dsubmenuDeptoArea">
-			<div class="dsubOpcionMenu" id="dnuevoDepto">
-				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoDepto">
-				<p class="dtituloSubOpcionMenu">Nuevo Depto. y Área</p>
-			</div>
-			<div class="dsubOpcionMenu" id="dabrirDeptos">
-				<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirDeptos">
-				<p class="dtituloSubOpcionMenu">Abrir lista de deptos.</p>
-			</div>
+            <a href="depto-nuevo.php">
+                <div class="dsubOpcionMenu" id="dnuevoDepto">
+                    <img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoDepto">
+                    <p class="dtituloSubOpcionMenu">Nuevo Depto. y Área</p>
+                </div>
+            </a>
+            <a href="depto-lista.php">
+                <div class="dsubOpcionMenu" id="dabrirDeptos">
+                    <img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirDeptos">
+                    <p class="dtituloSubOpcionMenu">Abrir lista de deptos.</p>
+                </div>
+            </a>
 		</div>
 		<div class="dopcionMenu" id="dalmacen">
 			<img class="diconoMenu" src="images/iconos/almacen.png" alt="inventario">
