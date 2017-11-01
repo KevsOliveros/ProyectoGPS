@@ -35,14 +35,14 @@
 		<div class="container" id="main">
 			<div class="row" id="f">
 				<div class="col-12">
-					<form action="" id="formulario">
+					<form action="nuevoalmacen.php" method="post" id="formulario">
 						<div class="form-group">
 							<label for="nombre">Nombre:</label>
-							<input class="form-control" type="text" placeholder="Introduzca un nombre">
+							<input class="form-control" type="text" placeholder="Introduzca un nombre" name="nombre_almacen">
 						</div>
 						<div class="form-group">
 							<label for="nombre">Descripción:</label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							<textarea  class="form-control" id="exampleFormControlTextarea1" rows="3" name="direccion_almacen"></textarea>
 						</div>
 						<div class="form-group" id="botones">
 							<input class="btn btn-success" type="submit" value="Aceptar">

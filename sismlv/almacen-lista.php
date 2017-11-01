@@ -38,6 +38,11 @@
 					<div class="btn btn-danger">
 						<i class="fa fa-file-pdf-o" aria-hidden="true">   Exportar</i>
 					</div>
+					<?php
+                      $server = mysql_connect("localhost", "root", "Privada"); 
+                      $db = mysql_select_db("sismlv", $server); 
+                      $query = mysql_query("SELECT * FROM almacen"); 
+                    ?>
 					<table class="table" id="tablaAlmacenes">
 						<thead>
 							<tr>
@@ -48,39 +53,21 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Almacén Principal</td>
-								<td>Lorem ipsum dolor sit amet</td>
-								<td>
-									<div class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i>
-									</div>
-								</td>
-								<td>
-									<div class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></div>
-								</td>
-							</tr>
-							<tr>
-								<td>Almacén 2do piso</td>
-								<td>Lorem ipsum dolor sit amet</td>
-								<td>
-									<div class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i>
-									</div>
-								</td>
-								<td>
-									<div class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></div>
-								</td>
-							</tr>
-							<tr>
-								<td>Almacén Rayos X</td>
-								<td>Lorem ipsum dolor sit amet</td>
-								<td>
-									<div class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i>
-									</div>
-								</td>
-								<td>
-									<div class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></div>
-								</td>
-							</tr>
+							 <?php
+                                   while ($row = mysql_fetch_array($query)) {
+                                       echo "<tr>";
+                                       echo "<td>".$row['nombre_almacen']."</td>";
+                                       echo "<td>".$row['direccion_almacen']."</td>";
+                                       
+                                       echo "<td> <div class=\"btn btn-primary\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </div> </td>";
+                                       
+                                       echo "<td> <div class=\"btn btn-danger\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i> </div> </td>";
+                                           
+                                           
+                                       echo "</tr>";
+                                   }
+
+                                ?>
 						</tbody>
 					</table>
 				</div>
