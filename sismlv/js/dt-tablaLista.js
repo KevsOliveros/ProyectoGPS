@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('#tablaAlmacenes').DataTable({
+	$('#tablaLista').DataTable({
 		"scrollX": true,
 		"columnDefs": [
 			{

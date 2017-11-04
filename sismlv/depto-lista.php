@@ -35,10 +35,10 @@
 		<div class="container" id="main">
 			<div class="row" id="f">
 				<div class="col-12" id="tablaDiv">
-					<div class="btn btn-danger">
+					<div class="btn btn-danger col-12" id="botonExportar">
 						<i class="fa fa-file-pdf-o" aria-hidden="true">   Exportar</i>
 					</div>
-					<table class="table" id="tablaAlmacenes">
+					<table class="table" id="tablaLista">
 						<thead>
 							<tr>
 								<th>Departamento</th>
@@ -72,13 +72,11 @@
 							</tr>
 							<tr>
 								<td>Departamento 1</td>
-								<td>Otorrinolaringologo<br>
-                                    Otra Area 1<br>
-                                    Otra Area 2<br>
-                                       
-                               
-                               </td>
-                                
+								<td>Otorrinolaringologo<br> Otra Area 1<br> Otra Area 2<br>
+
+
+								</td>
+
 								<td>
 									<div class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i>
 									</div>
@@ -96,8 +94,8 @@
 		<?php
 			require_once 'scripts.php';
 		?>
-			<!--Data Table: tablaAlmacenes-->
-			<script src="js/dt-tablaAlmacenes.js"></script>
+			<!--Data Table: tabla-->
+			<script src="js/dt-tablaLista.js"></script>
 			<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 			<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 </body>

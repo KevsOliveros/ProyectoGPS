@@ -1,0 +1,44 @@
+#tituloVentana {
+	background-color: #53E69D;
+	height: 40px;
+}
+
+#iconoVentana {
+	height: 40px;
+	padding: 0;
+}
+
+#iconoVentana img {
+	margin-top: 4px;
+	margin-left: 9px;
+}
+
+#nombreVentana {
+	height: 40px;
+	padding: 0;
+}
+
+#nombreVentana p {
+	font-size: 30px;
+	color: white;
+}
+#main {
+	background-color: #F5F5F5;
+}
+
+#formulario {
+	margin-top: 5%;
+	margin-bottom: 50%;
+	margin-left: 1%;
+	margin-right: 1%;
+	background-color: white;
+	width: 98%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.form-group {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}

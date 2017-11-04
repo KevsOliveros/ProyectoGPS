@@ -8,8 +8,8 @@
 
 .dopcionMenu {
       width: 100%;
-      background-color: black;
-      border-bottom: 1px solid white;
+      background-color: #2C343F;
+      /*border-bottom: 1px solid white;*/
       height: 40px;
       float: left;
 }
@@ -66,18 +66,17 @@
 }
 
 .dsubmenu {
-      width: 95%;
+      width: 97%;
       height: auto;
       float: left;
-      background-color: black;
+      background-color: #2C343F;
       display: none;
       font-size: 5px;
 }
 
 .dsubOpcionMenu {
       width: 100%;
-      background-color: black;
-      border-bottom: 1px solid white;
+      background-color: #2C343F;
       margin-top: 1%;
       height: 40px;
       float: left;

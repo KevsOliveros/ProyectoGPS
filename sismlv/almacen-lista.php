@@ -35,7 +35,7 @@
 		<div class="container" id="main">
 			<div class="row" id="f">
 				<div class="col-12" id="tablaDiv">
-					<div class="btn btn-danger">
+					<div class="btn btn-danger col-12" id="botonExportar">
 						<i class="fa fa-file-pdf-o" aria-hidden="true">   Exportar</i>
 					</div>
 					<?php
@@ -43,17 +43,17 @@
                       $db = mysql_select_db("sismlv", $server); 
                       $query = mysql_query("SELECT * FROM almacen"); 
                     ?>
-					<table class="table" id="tablaAlmacenes">
-						<thead>
-							<tr>
-								<th>Almacén</th>
-								<th>Dirección</th>
-								<th>Editar</th>
-								<th>Eliminar</th>
-							</tr>
-						</thead>
-						<tbody>
-							 <?php
+						<table class="table" id="tablaLista">
+							<thead>
+								<tr>
+									<th>Almacén</th>
+									<th>Dirección</th>
+									<th>Editar</th>
+									<th>Eliminar</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php
                                    while ($row = mysql_fetch_array($query)) {
                                        echo "<tr>";
                                        echo "<td>".$row['nombre_almacen']."</td>";
@@ -68,8 +68,8 @@
                                    }
 
                                 ?>
-						</tbody>
-					</table>
+							</tbody>
+						</table>
 				</div>
 			</div>
 		</div>
@@ -78,7 +78,7 @@
 			require_once 'scripts.php';
 		?>
 			<!--Data Table: tablaAlmacenes-->
-			<script src="js/dt-tablaAlmacenes.js"></script>
+			<script src="js/dt-tablaLista.js"></script>
 			<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 			<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 </body>
