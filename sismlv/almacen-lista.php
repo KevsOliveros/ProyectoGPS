@@ -59,11 +59,13 @@
                                        echo "<td>".$row['nombre_almacen']."</td>";
                                        echo "<td>".$row['direccion_almacen']."</td>";
                                        
-                                       echo "<td> <div class=\"btn btn-primary\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </div> </td>";
+                                       echo "<td> <a href=\"almacen-editar.php?nom_alm=".$row['nombre_almacen']."&desc_alm=".$row['direccion_almacen']."\"> 
+                                       <div class=\"btn btn-primary\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </div></a> </td>";
                                        
-                                       echo "<td> <div class=\"btn btn-danger\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i> </div> </td>";
-                                           
-                                           
+                                       echo "<td> <a href=\"eliminaralmacen.php?nom_alm=".$row['nombre_almacen']."\">  
+                                       <div class=\"btn btn-danger\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i> </div></a> </td>";
+                                    
+                                       
                                        echo "</tr>";
                                    }
 
@@ -81,6 +83,7 @@
 			<script src="js/dt-tablaLista.js"></script>
 			<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 			<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+			
 </body>
 
 </html>
