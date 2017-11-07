@@ -1,21 +1,12 @@
 	
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "Privada";
-$dbname = "sismlv";
+require_once 'conectar.php';
 
 $nombre=$_POST['nombre_almacen'];
 $direccion=$_POST['direccion_almacen'];
 $anterior=$_GET['nom_alm'];
 
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+require_once 'conexion.php';
 
 $sql = "UPDATE almacen SET nombre_almacen = '$nombre', direccion_almacen = '$direccion'
 WHERE nombre_almacen = '$anterior'";
