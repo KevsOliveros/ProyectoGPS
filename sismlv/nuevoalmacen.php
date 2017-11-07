@@ -1,19 +1,11 @@
 	
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "Privada";
-$dbname = "sismlv";
+require_once 'conectar.php';
 
 $nombre=$_POST['nombre_almacen'];
 $direccion=$_POST['direccion_almacen'];
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+require_once 'conexion.php';
 
 $sql = "INSERT INTO almacen (nombre_almacen, direccion_almacen)
 VALUES ('$nombre', '$direccion')";
