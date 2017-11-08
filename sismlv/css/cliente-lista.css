@@ -1,0 +1,33 @@
+#tituloVentana {
+	background-color: #FF7676;
+	height: 40px;
+}
+
+#iconoVentana {
+	height: 40px;
+	padding: 0;
+}
+
+#iconoVentana img {
+	margin-top: 4px;
+	margin-left: 9px;
+}
+
+#nombreVentana {
+	height: 40px;
+	padding: 0;
+}
+
+#nombreVentana p {
+	font-size: 20px;
+	color: white;
+	margin-top: 5px;
+}
+
+#f {
+	margin-top: 10%;
+}
+
+#botonExportar {
+	margin-bottom: 10%;
+}
