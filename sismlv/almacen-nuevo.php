@@ -1,3 +1,7 @@
+<?php   
+   session_start();
+    if(!isset($_SESSION['token_Id'])) header('Location: index.php');  
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,6 +51,9 @@
 						<div class="form-group" id="botones">
 							<input class="btn btn-success" type="submit" value="Aceptar">
 							<input class="btn btn-danger" type="submit" value="Cancelar">
+						</div>
+						<div class="form-group" hidden="true">
+							<input class="form-control" type="text" name="nom_usuario" value="<?php echo $_SESSION['current_user']?>">
 						</div>
 					</form>
 				</div>

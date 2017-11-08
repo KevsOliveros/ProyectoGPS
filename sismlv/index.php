@@ -17,7 +17,7 @@
 <body>
 	<div id="formulario">
 		<h1 id="titulo">SISMLV</h1>
-		<form action="menu.php">
+		<form method="post" action="iniciar.php">
 			<label for="usuario">Usuario:</label>
 			<div class="input-group">
 				<div class="input-group-addon"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
