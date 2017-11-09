@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Nuevo Departamento y Area</title>
+	<title>Lista Departamento y Area</title>
 	<?php
 		require_once 'libs.php';
 	?>
@@ -30,7 +30,7 @@
 							<img class="align-middle" src="images/iconos/ver.png" alt="nuevo">
 						</div>
 						<div class="col-10" id="nombreVentana">
-							<p>Abrir Lista de Departamentos y Areas</p>
+							<p>Abrir Lista de Deptos. y Areas</p>
 						</div>
 					</div>
 				</div>

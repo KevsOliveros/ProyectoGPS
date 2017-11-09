@@ -4,14 +4,18 @@
 		<p class="dtituloOpcionMenu">Inventario</p>
 	</div>
 	<div class="dsubmenu" id="dsubmenuInventario">
-		<div class="dsubOpcionMenu" id="dnuevoArticulo">
-			<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoArticulo">
-			<p class="dtituloSubOpcionMenu">Nuevo Artículo</p>
-		</div>
-		<div class="dsubOpcionMenu" id="deditarArticulo">
-			<img class="dsubIconoMenu" src="images/iconos/editar.png" alt="editarArticulo">
-			<p class="dtituloSubOpcionMenu">Editar Artículo</p>
-		</div>
+		<a href="articulo-nuevo.php">
+			<div class="dsubOpcionMenu" id="dnuevoArticulo">
+				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoArticulo">
+				<p class="dtituloSubOpcionMenu">Nuevo Artículo</p>
+			</div>
+		</a>
+		<a href="articulo-editar.php">
+			<div class="dsubOpcionMenu" id="deditarArticulo">
+				<img class="dsubIconoMenu" src="images/iconos/editar.png" alt="editarArticulo">
+				<p class="dtituloSubOpcionMenu">Editar Artículo</p>
+			</div>
+		</a>
 		<div class="dsubOpcionMenu" id="deliminarArticulo">
 			<img class="dsubIconoMenu" src="images/iconos/eliminar.png" alt="eliminarArticulo">
 			<p class="dtituloSubOpcionMenu">Eliminar Artículo</p>
@@ -100,14 +104,18 @@
 		<p class="dtituloOpcionMenu">Clientes</p>
 	</div>
 	<div class="dsubmenu" id="dsubmenuCliente">
-		<div class="dsubOpcionMenu" id="dnuevoCliente">
-			<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoCliente">
-			<p class="dtituloSubOpcionMenu">Nuevo Cliente</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dabrirListaCliente">
-			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaCliente">
-			<p class="dtituloSubOpcionMenu">Abrir Lista</p>
-		</div>
+		<a href="cliente-nuevo.php">
+			<div class="dsubOpcionMenu" id="dnuevoCliente">
+				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoCliente">
+				<p class="dtituloSubOpcionMenu">Nuevo Cliente</p>
+			</div>
+		</a>
+		<a href="cliente-lista.php">
+			<div class="dsubOpcionMenu" id="dabrirListaCliente">
+				<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaCliente">
+				<p class="dtituloSubOpcionMenu">Abrir Lista</p>
+			</div>
+		</a>
 	</div>
 	<div class="dopcionMenu" id="dinformes">
 		<img class="diconoMenu" src="images/iconos/informe.png" alt="inventario">
