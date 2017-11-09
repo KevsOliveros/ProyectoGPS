@@ -28,14 +28,18 @@
 				<p class="tituloOpcionMenu">Inventario</p>
 			</div>
 			<div class="submenu" id="submenuInventario">
-				<div class="subOpcionMenu" id="nuevoArticulo">
-					<img class="subIconoMenu" src="images/iconos/nuevo.png" alt="nuevoArticulo">
-					<p class="tituloSubOpcionMenu">Nuevo Artículo</p>
-				</div>
-				<div class="subOpcionMenu" id="editarArticulo">
-					<img class="subIconoMenu" src="images/iconos/editar.png" alt="editarArticulo">
-					<p class="tituloSubOpcionMenu">Editar Artículo</p>
-				</div>
+				<a href="articulo-nuevo.php">
+					<div class="subOpcionMenu" id="nuevoArticulo">
+						<img class="subIconoMenu" src="images/iconos/nuevo.png" alt="nuevoArticulo">
+						<p class="tituloSubOpcionMenu">Nuevo Artículo</p>
+					</div>
+				</a>
+				<a href="articulo-editar.php">
+					<div class="subOpcionMenu" id="editarArticulo">
+						<img class="subIconoMenu" src="images/iconos/editar.png" alt="editarArticulo">
+						<p class="tituloSubOpcionMenu">Editar Artículo</p>
+					</div>
+				</a>
 				<div class="subOpcionMenu" id="eliminarArticulo">
 					<img class="subIconoMenu" src="images/iconos/eliminar.png" alt="eliminarArticulo">
 					<p class="tituloSubOpcionMenu">Eliminar Artículo</p>
@@ -124,14 +128,18 @@
 				<p class="tituloOpcionMenu">Clientes</p>
 			</div>
 			<div class="submenu" id="submenuCliente">
-				<div class="subOpcionMenu" id="nuevoCliente">
-					<img class="subIconoMenu" src="images/iconos/nuevo.png" alt="nuevoCliente">
-					<p class="tituloSubOpcionMenu">Nuevo Cliente</p>
-				</div>
-				<div class="subOpcionMenu" id="abrirListaCliente">
-					<img class="subIconoMenu" src="images/iconos/ver.png" alt="abrirListaCliente">
-					<p class="tituloSubOpcionMenu">Abrir Lista</p>
-				</div>
+				<a href="cliente-nuevo.php">
+					<div class="subOpcionMenu" id="nuevoCliente">
+						<img class="subIconoMenu" src="images/iconos/nuevo.png" alt="nuevoCliente">
+						<p class="tituloSubOpcionMenu">Nuevo Cliente</p>
+					</div>
+				</a>
+				<a href="cliente-lista.php">
+					<div class="subOpcionMenu" id="abrirListaCliente">
+						<img class="subIconoMenu" src="images/iconos/ver.png" alt="abrirListaCliente">
+						<p class="tituloSubOpcionMenu">Abrir Lista</p>
+					</div>
+				</a>
 			</div>
 			<div class="opcionMenu" id="informes">
 				<img class="iconoMenu" src="images/iconos/informe.png" alt="inventario">
