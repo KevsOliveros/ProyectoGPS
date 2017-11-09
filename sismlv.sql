@@ -1,98 +1,79 @@
--- MySQL dump 10.13  Distrib 5.6.25, for Win32 (x86)
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost    Database: sismlv
--- ------------------------------------------------------
--- Server version	5.6.25
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 09-11-2017 a las 16:28:43
+-- Versión del servidor: 10.1.28-MariaDB
+-- Versión de PHP: 7.1.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Table structure for table `almacen`
+-- Base de datos: `sismlv`
 --
 
-DROP TABLE IF EXISTS `almacen`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `almacen`
+--
+
 CREATE TABLE `almacen` (
   `nombre_almacen` varchar(30) NOT NULL,
   `direccion_almacen` varchar(50) DEFAULT NULL,
-  `nom_usuario` varchar(15) DEFAULT NULL,
-  PRIMARY KEY (`nombre_almacen`)
+  `nom_usuario` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `almacen`
+-- Volcado de datos para la tabla `almacen`
 --
 
-LOCK TABLES `almacen` WRITE;
-/*!40000 ALTER TABLE `almacen` DISABLE KEYS */;
-INSERT INTO `almacen` VALUES ('de otro','men','prueba'),('does it','finally work?','prueba'),('kjdflskjd','lskdj','admin'),('repeat','anotha one','prueba'),('test15','modificado','admin'),('test16','changed to sixteen','admin'),('todavia',' otro men','test');
-/*!40000 ALTER TABLE `almacen` ENABLE KEYS */;
-UNLOCK TABLES;
+INSERT INTO `almacen` (`nombre_almacen`, `direccion_almacen`, `nom_usuario`) VALUES
+('de otro', 'men', 'prueba'),
+('does it', 'finally work?', 'prueba'),
+('kjdflskjd', 'lskdj', 'admin'),
+('repeat', 'anotha one', 'prueba'),
+('test15', 'modificado', 'admin'),
+('test16', 'changed to sixteen', 'admin'),
+('todavia', ' otro men', 'test');
+
+-- --------------------------------------------------------
 
 --
--- Table structure for table `area`
+-- Estructura de tabla para la tabla `area`
 --
 
-DROP TABLE IF EXISTS `area`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `area` (
   `nombre_depto` varchar(30) DEFAULT NULL,
-  `nombre_area` varchar(30) DEFAULT NULL,
-  KEY `nombre_depto` (`nombre_depto`),
-  CONSTRAINT `area_ibfk_1` FOREIGN KEY (`nombre_depto`) REFERENCES `departamento` (`nombre_depto`)
+  `nombre_area` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
+-- --------------------------------------------------------
 
 --
--- Dumping data for table `area`
+-- Estructura de tabla para la tabla `departamento`
 --
 
-LOCK TABLES `area` WRITE;
-/*!40000 ALTER TABLE `area` DISABLE KEYS */;
-/*!40000 ALTER TABLE `area` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `departamento`
---
-
-DROP TABLE IF EXISTS `departamento`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `departamento` (
-  `nombre_depto` varchar(30) NOT NULL,
-  PRIMARY KEY (`nombre_depto`)
+  `nombre_depto` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
+-- --------------------------------------------------------
 
 --
--- Dumping data for table `departamento`
+-- Estructura de tabla para la tabla `proveedor`
 --
 
-LOCK TABLES `departamento` WRITE;
-/*!40000 ALTER TABLE `departamento` DISABLE KEYS */;
-/*!40000 ALTER TABLE `departamento` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `proveedor`
---
-
-DROP TABLE IF EXISTS `proveedor`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `proveedor` (
   `nombre_proveedor` varchar(30) NOT NULL,
   `contacto_proveedor` varchar(40) DEFAULT NULL,
@@ -102,52 +83,94 @@ CREATE TABLE `proveedor` (
   `telefonoa_proveedor` varchar(10) DEFAULT NULL,
   `fax_proveedor` varchar(15) DEFAULT NULL,
   `email_proveedor` varchar(25) DEFAULT NULL,
-  `nom_usuario` varchar(15) DEFAULT NULL,
-  PRIMARY KEY (`nombre_proveedor`)
+  `nom_usuario` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `proveedor`
+-- Volcado de datos para la tabla `proveedor`
 --
 
-LOCK TABLES `proveedor` WRITE;
-/*!40000 ALTER TABLE `proveedor` DISABLE KEYS */;
-/*!40000 ALTER TABLE `proveedor` ENABLE KEYS */;
-UNLOCK TABLES;
+INSERT INTO `proveedor` (`nombre_proveedor`, `contacto_proveedor`, `nombrecontacto_proveedor`, `direccion_proveedor`, `telefonop_proveedor`, `telefonoa_proveedor`, `fax_proveedor`, `email_proveedor`, `nom_usuario`) VALUES
+('Proveedor 1', 'Juan Carlo Perez Lopez', 'Juan', 'Calle Constituyentes col. Independencia', '3243243554', '5435345345', '32424324234', 'proveedor1@gmail.com', 'test'),
+('Proveedor 2', 'Ana Sánchez', 'Ana', 'Calle 1234 col. Numeros', '234324342', '3534534543', '535345345', 'proveedor2@gmail.com', 'test'),
+('Proveedor 3', 'Luis Carlos Torres', 'Luis', 'Calle blabla', '432423234', '432423432', '4324232', 'correo@gmail.com', 'test');
+
+-- --------------------------------------------------------
 
 --
--- Table structure for table `usuario`
+-- Estructura de tabla para la tabla `usuario`
 --
 
-DROP TABLE IF EXISTS `usuario`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `usuario` (
-  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(11) NOT NULL,
   `nom_usuario` varchar(15) NOT NULL,
-  `pass_usuario` varchar(15) NOT NULL,
-  PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  `pass_usuario` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `usuario`
+-- Volcado de datos para la tabla `usuario`
 --
 
-LOCK TABLES `usuario` WRITE;
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'test','test'),(2,'prueba','prueba'),(3,'admin','admin');
-/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+INSERT INTO `usuario` (`id_usuario`, `nom_usuario`, `pass_usuario`) VALUES
+(1, 'test', 'test'),
+(2, 'prueba', 'prueba'),
+(3, 'admin', 'admin');
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `almacen`
+--
+ALTER TABLE `almacen`
+  ADD PRIMARY KEY (`nombre_almacen`);
+
+--
+-- Indices de la tabla `area`
+--
+ALTER TABLE `area`
+  ADD KEY `nombre_depto` (`nombre_depto`);
+
+--
+-- Indices de la tabla `departamento`
+--
+ALTER TABLE `departamento`
+  ADD PRIMARY KEY (`nombre_depto`);
+
+--
+-- Indices de la tabla `proveedor`
+--
+ALTER TABLE `proveedor`
+  ADD PRIMARY KEY (`nombre_proveedor`);
+
+--
+-- Indices de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`id_usuario`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `area`
+--
+ALTER TABLE `area`
+  ADD CONSTRAINT `area_ibfk_1` FOREIGN KEY (`nombre_depto`) REFERENCES `departamento` (`nombre_depto`);
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2017-11-08 11:05:24
