@@ -64,10 +64,12 @@
 					<img class="subIconoMenu" src="images/iconos/pedir.png" alt="pedirStock">
 					<p class="tituloSubOpcionMenu">Pedir Stock</p>
 				</div>
-				<div class="subOpcionMenu" id="devolverStock">
-					<img class="subIconoMenu" src="images/iconos/devolver.png" alt="devolverStock">
-					<p class="tituloSubOpcionMenu">Devolver Stock</p>
-				</div>
+                <a href="devolver-stock.php">
+                    <div class="subOpcionMenu" id="devolverStock">
+                            <img class="subIconoMenu" src="images/iconos/devolver.png" alt="devolverStock">
+                            <p class="tituloSubOpcionMenu">Devolver Stock</p>
+                    </div>
+                </a>
 			</div>
 			<div class="opcionMenu" id="deptoArea">
 				<img class="iconoMenu" src="images/iconos/deptoarea.png" alt="inventario">

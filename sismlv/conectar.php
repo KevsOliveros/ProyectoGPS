@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "Privada";
+$password = "";
 $dbname = "sismlv";
 ?>
