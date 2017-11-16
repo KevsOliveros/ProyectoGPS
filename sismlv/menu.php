@@ -53,8 +53,10 @@
 					<p class="tituloSubOpcionMenu">Abrir Lista de Pedidos</p>
 				</div>
 				<div class="subOpcionMenu" id="venderStock">
-					<img class="subIconoMenu" src="images/iconos/vender.png" alt="venderStock">
-					<p class="tituloSubOpcionMenu">Vender Stock</p>
+					<a href="venta-stock.php">
+						<img class="subIconoMenu" src="images/iconos/vender.png" alt="venderStock">
+						<p class="tituloSubOpcionMenu">Vender Stock</p>
+					</a>
 				</div>
 				<div class="subOpcionMenu" id="recibirStock">
 					<img class="subIconoMenu" src="images/iconos/recibir.png" alt="recibir">

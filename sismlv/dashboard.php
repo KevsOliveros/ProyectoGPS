@@ -28,10 +28,12 @@
 			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaPedidos">
 			<p class="dtituloSubOpcionMenu">Abrir Lista de Pedidos</p>
 		</div>
-		<div class="dsubOpcionMenu" id="dvenderStock">
-			<img class="dsubIconoMenu" src="images/iconos/vender.png" alt="venderStock">
-			<p class="dtituloSubOpcionMenu">Vender Stock</p>
-		</div>
+		<a href="venta-stock.php">
+			<div class="dsubOpcionMenu" id="dvenderStock">
+				<img class="dsubIconoMenu" src="images/iconos/vender.png" alt="venderStock">
+				<p class="dtituloSubOpcionMenu">Vender Stock</p>
+			</div>
+		</a>
 		<div class="dsubOpcionMenu" id="drecibirStock">
 			<img class="dsubIconoMenu" src="images/iconos/recibir.png" alt="recibir">
 			<p class="dtituloSubOpcionMenu">Recibir Stock</p>

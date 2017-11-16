@@ -1,0 +1,77 @@
+#tituloVentana {
+	background-color: #336597;
+	height: 40px;
+}
+
+#iconoVentana {
+	height: 40px;
+	padding: 0;
+}
+
+#iconoVentana img {
+	margin-top: 4px;
+	margin-left: 9px;
+}
+
+#nombreVentana {
+	height: 40px;
+	padding: 0;
+}
+
+#nombreVentana p {
+	font-size: 30px;
+	color: white;
+}
+
+#main {
+	background-color: #F5F5F5;
+	height: 100%;
+}
+
+#formulario {
+	margin-bottom: 50%;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: white;
+	width: 96%;
+	height: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.form-group {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#datosOtros {
+	display: none;
+}
+
+#opcionesDatos {
+	margin-top: 2%;
+}
+
+.btnOpcion {
+	background-color: white;
+}
+
+.btnNuevaCat {
+	background-color: #53E69D;
+	height: 37px;
+	width: 37px;
+	padding: 0;
+}
+
+fieldset {
+	color: #666666;
+}
+
+#tablaLista {
+	text-align: center;
+}
+
+#tablaLista tbody tr td {
+	padding: 0;
+}
