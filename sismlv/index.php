@@ -1,48 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Login</title>
-	<!--CSS Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<!--iconos-->
-	<link rel="stylesheet" href="libs/iconos/css/font-awesome.css">
-	<!--Google fonts: raleway-->
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<!--CSS login-->
+   <title>Menu Principal</title>
+	<?php require_once 'meta_tags.php';?>
+   <?php require_once 'libs_css.php';?>
+   <?php require_once 'font_awesome.php';?>
+   <?php require_once 'google_fonts.php';?>
+   <?php require_once 'favicon.php';?>
+   <link rel="stylesheet" href="libs/iconos/style.css">
 	<link rel="stylesheet" href="css/login-estilos.css">
 </head>
+
 <body>
-	<div id="formulario">
-		<h1 id="titulo">SISMLV</h1>
-		<form method="post" action="iniciar.php">
-			<label for="usuario">Usuario:</label>
-			<div class="input-group">
-				<div class="input-group-addon"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+   <div class="container-fluid" id="principal">
+		<br>
+		<div class="row">
+         <div class="col-12 col-sm-6 offset-sm-3" id="contenedor-principal">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="text-center" id="titulo">SISMLV</h1>
+					</div>
 				</div>
-				<input class="form-control" type="text" name="usuario" id="usuario" placeholder="usuario">
-			</div>
-			<label for="pass">Password:</label>
-			<div class="input-group">
-				<div class="input-group-addon">
-					<i class="fa fa-key" aria-hidden="true"></i>
+				<div class="row">
+					<div class="col-12 text-center">
+						<i class="fa fa-user-md" id="logo-usuario" aria-hidden="true"></i>
+					</div>
 				</div>
-				<input class="form-control" type="password" name="pass" id="pass">
+				<br>
+				<div class="row">
+					<div class="col-12">
+						<form action="iniciar.php" method="post" class="form">
+							<div class="form-group">
+								<div class="col-12">
+									<label for="usuario" class="etiqueta">Usuario:</label>
+								</div>
+								<div class="col-12">
+									<div class="input-group">
+										<div class="input-group-addon"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+										</div>
+										<input class="form-control" type="text" name="usuario" placeholder="usuario">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-12">
+									<label for="pass" class="etiqueta">Password:</label>
+								</div>
+								<div class="col-12">
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-key" aria-hidden="true"></i>
+										</div>
+										<input class="form-control" type="password" name="pass" id="pass">
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<input class="btn btn-entrar col-12" type="submit" value="Entrar" id="entrar">
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
-			<br>
-			<input class="btn" type="submit" value="Entrar" id="entrar">
-		</form>
-	</div>
-
-
-	<!-- Scripts -->
-	<!--jquery-->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<!--pooper-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<!--bootstrap-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      </div>
+   </div>
+   <?php require_once 'scripts.php';?>
 </body>
 </html>
