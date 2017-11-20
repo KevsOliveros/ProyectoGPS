@@ -16,7 +16,7 @@
    <div class="container-fluid" id="principal">
 		<br>
 		<div class="row">
-         <div class="col-12 col-sm-6 offset-sm-3" id="contenedor-principal">
+         <div class="col-12 col-lg-6 offset-lg-3" id="contenedor-principal">
 				<div class="row">
 					<div class="col-12">
 						<h1 class="text-center" id="titulo">SISMLV</h1>
