@@ -1,161 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Nuevo Artículo</title>
-	<?php
-		require_once 'libs.php';
-	?>
-	<!--CSS cliente-nuevo.php-->
-	<link rel="stylesheet" href="css/cliente-nuevo.css">
-</head>
-
-<body>
-	<?php
-		require_once 'menu-superior.php';
-		require_once 'dashboard.php';
-	?>
-		<div class="container">
-			<div class="row">
-				<div class="col-12" id="tituloVentana">
-					<div class="row">
-						<div class="col-2" id="iconoVentana">
-							<img class="align-middle" src="images/iconos/nuevo.png" alt="nuevo">
-						</div>
-						<div class="col-10" id="nombreVentana">
-							<p>Nuevo Artículo</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container" id="main">
-			<div class="row" id="f">
-				<div class="col-12">
-					<div class="btn-group" role="group" aria-label="Opciones cliente" id="opcionesDatos">
-						<button type="button" class="btn btn-light btnOpcion" id="btnDatosCliente">Artículo</button>
-						<button type="button" class="btn btn-light btnOpcion" id="btnDatosOtros">Inventario</button>
-					</div>
-					<form action="" method="post" id="formulario">
-						<div id="datosCliente">
-                     <fieldset>
-                        <legend>General</legend>
-                        <div class="form-group">
-                           <label for="nombre">Código :</label>
-                           <input class="form-control" type="text" placeholder="p. ej., WID32" name="nombre_almacen">
-                        </div>
-                        <div class="form-group">
-                           <label for="nombre">Descripción:</label>
-                           <textarea class="form-control" rows="3" name="" placeholder="[Entrar descripción completa aquí]"></textarea>
-                        </div>
-                        <div class="form-group row">
-                           <label for="nombre">Categoría:</label>
-                           <select name="" class="col-9 form-control">
-                              <option value="">Categoría 1</option>
-                              <option value="">Categoría 2</option>
-                              <option value="">Categoría 3</option>
-                           </select>
-                           <a href="" class="col-2">
-                              <button class="btn btnNuevaCat"><img src="images/iconos/nuevo.png" alt="nuevo"></button>
-                           </a>
-                        </div>
-                        <div class="form-group">
-                           <label for="nombre">Subcategoría:</label>
-                           <select name="" class="form-control">
-                              <option value="">Subcategoría 1</option>
-                              <option value="">Subcategoría 2</option>
-                              <option value="">Subcategoría 3</option>
-                           </select>
-                        </div>
-                     </fieldset>
-                     <fieldset>
-                        <legend>Precios</legend>
-                        <div class="form-group">
-                           <label for="nombre">Costo de compra unitario:</label>
-                           <input class="form-control" type="number" placeholder="p. ej., $20.90" name="nombre_almacen">
-                        </div>
-                        <div class="form-group">
-                           <label for="nombre">Precio de venta unitario:</label>
-                           <input class="form-control" type="number" placeholder="p. ej., $15.00" name="nombre_almacen">
-                        </div>
-                        <div class="form-group">
-                           <label for="nombre">Impuesto:</label>
-                           <input class="form-control" type="number" placeholder="p. ej., $86.00" name="nombre_almacen">
-                        </div>
-                     </fieldset>
-                     <div class="form-group">
-                        <label for="nombre">Unidad de medida:</label>
-                        <input class="form-control" type="text" name="nombre_almacen" value="pieza" disabled="disabled">
+<div class="row" id="ventanaTitulo">
+	<div class="col-12">
+		<span class="icon-nuevo"></span>
+		<span>Nuevo Artículo</span>
+	</div>
+</div>
+<div class="row">
+   <div class="col-12">
+      <div class="btn-group">
+         <button class="btn btn-light" id="btn-articulo">Artículo</button>
+         <button class="btn btn-light" id="btn-inventario">Inventario</button>
+      </div>
+   </div>
+</div>
+<div class="row" id="formulario">
+   <div class="col-12">
+      <br>
+      <form action="" class="form" id="formularioArticulo">
+         <div>               
+            <fieldset>
+               <legend>General</legend>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-12 col-sm-4">
+                        <label for="codigo">Código:</label>
                      </div>
-                     <div class="form-group">
-								<label for="nombre">Notas del artículo:</label>
-								<textarea class="form-control" rows="3" name="" placeholder="[Entre nota aquí]"></textarea>
-							</div>
-						</div>
-						<div id="datosOtros">
-                        <table class="table table-bordered table-responsive" id="tablaLista">
-                           <thead class="thead-dark">
-                              <tr>
-                                 <th>Almacén</th>
-                                 <th>Cantidad</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td><input type="text"></td>
-                                 <td><input type="number"></td>
-                              </tr>
-                              <tr>
-                                 <td><input type="text"></td>
-                                 <td><input type="number"></td>
-                              </tr>
-                              <tr>
-                                 <td><input type="text"></td>
-                                 <td><input type="number"></td>
-                              </tr>
-                              <tr>
-                                 <td><input type="text" value="Totales:" disabled="disabled"></td>
-                                 <td><input type="number" value="0"></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        <a href="">
-                           <button class="btn btn-primary">Añadir</button>
-                        </a>
-                        <a href="">
-                           <button class="btn btn-secondary">Quitar</button>
-                        </a>
-                        <fieldset>
-                           <legend>Proveedor</legend>
-                           <div class="form-group row">
-                              <label for="nombre">Proveedor:</label>
-                              <select name="" class="col-9 form-control">
-                                 <option value="">Proveedor 1</option>
-                                 <option value="">Proveedor 2</option>
-                                 <option value="">Proveedor 3</option>
-                              </select>
-                              <a href="" class="col-2">
-                                 <button class="btn btnNuevaCat"><img src="images/iconos/nuevo.png" alt="nuevo"></button>
-                              </a>
-                           </div>
-                        </fieldset>
-						</div>
-						<div class="form-group" id="botones">
-							<input class="btn btn-success" type="submit" value="Añadir artículo">
-							<input class="btn btn-danger" type="submit" value="Cancelar">
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!--Scripts-->
-		<?php
-		   require_once 'scripts.php';
-	   ?>
-		<!-- Mostrar/ocultar opciones del formulario -->
-		<script src="js/nuevo-cliente.js"></script>
-</body>
-</html>
+                     <div class="col-12 col-sm-8">
+                        <input type="text" class="form-control" name="codigo" required="required" placeholder="p. ej., WID2">
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-12 col-sm-4">
+                        <label for="descripcion">Descripción:</label>
+                     </div>
+                     <div class="col-12 col-sm-8">
+                        <textarea class="form-control" name="descripcion" cols="30" rows="5" required="required" placeholder="Ingrese descripción completa aquí"></textarea>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-12 col-sm-4">
+                        <label for="departamento">Departamento:</label>
+                     </div>
+                     <div class="col-10 col-sm-7">
+                        <select class="form-control custom-select" name="departamento" required="required">
+                           <option value="" disabled selected>-- Seleccione una opción --</option>
+                        </select>
+                     </div>
+                     <div class="col-1 col-sm-1">
+                        <div class="btn btn-dark"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-12 col-sm-4">
+                        <label for="area">Área:</label>
+                     </div>
+                     <div class="col-12 col-sm-8">
+                        <select class="form-control custom-select" name="area" required="required">
+                           <option value="" disabled selected>-- Seleccione una opción --</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>  
+            </fieldset>
+            <fieldset>
+               <legend>Precios</legend>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-12 col-sm-4">
+                        <label for="costo_compra_unitario">Costo de compra unitario:</label>
+                     </div>
+                     <div class="col-12 col-sm-8">
+                        <div class="input-group">
+                           <span class="input-group-addon">$</span>
+                           <input type="number" class="form-control" name="costo_compra_unitario" placeholder="p. ej., 20.90">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-12 col-sm-4">
+                        <label for="precio_venta_unitario">Precio de venta unitario:</label>
+                     </div>
+                     <div class="col-12 col-sm-8">
+                        <div class="input-group">
+                           <span class="input-group-addon">$</span>
+                           <input type="number" class="form-control" name="precio_venta_unitario" placeholder="p. ej., 21.90">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-12 col-sm-4">
+                        <label for="impuesto">Impuesto:</label>
+                     </div>
+                     <div class="col-12 col-sm-8">
+                        <div class="input-group">
+                           <span class="input-group-addon">$</span>
+                           <input type="number" class="form-control" name="costo_compra_unitario" placeholder="p. ej., 16.00">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </fieldset>
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-12 col-sm-4">
+                     <label for="unidad_medida">Unidad de medida:</label>
+                  </div> 
+                  <div class="col-12 col-sm-8">
+                     <input type="text" class="form-control" name="unidad_medida" value="pieza" disabled>
+                  </div> 
+               </div>
+            </div> 
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-12 col-sm-4">
+                     <label for="nota">Nota del artículo:</label>
+                  </div>
+                  <div class="col-12 col-sm-8">
+                     <textarea class="form-control" name="nota" cols="30" rows="5" required="required" placeholder="Ingrese nota aquí"></textarea>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <input type="submit" class="btn btn-success col-12 col-sm-4 offset-sm-1" value="Añadir artículo" style="margin-bottom: 1%;">
+         <input type="reset" class="btn btn-danger col-12 col-sm-4 offset-sm-1" value="Cancelar" style="margin-bottom: 1%;">         
+      </form>
+      <form action="" class="form" id="formularioInventario">
+         <div class="form-group">
+            <div class="row">
+               <div class="col-12">
+                  <table class="table table-bordered table-hover text-center">
+                     <thead class="thead-dark">
+                        <tr>
+                           <th>Ubicación</th>
+                           <th>Cantidad</th>
+                           <th>Cantidad ideal</th>
+                           <th>Cantidad aviso</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <button class="btn btn-dark col-12 col-sm-4 offset-sm-1" style="margin-bottom: 1%;">Añadir</button>
+         <button class="btn btn-dark col-12 col-sm-4 offset-sm-1" style="margin-bottom: 1%;">Quitar</button>
+         <fieldset>
+            <legend>Proveedor</legend>
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-12 col-sm-4">
+                     <label for="proveedor">Proveedor predeterminado:</label>
+                  </div>
+                  <div class="col-10 col-sm-7">
+                     <select class="form-control custom-select" name="proveedor" required="required">
+                        <option value="" disabled selected>-- Seleccione una opción --</option>
+                     </select>
+                  </div>
+                  <div class="col-1 col-sm-1">
+                     <div class="btn btn-dark"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  </div>
+               </div>
+            </div>
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-12 col-sm-4">
+                     <label for="num_pieza_proveedor">Número de pieza del proveedor:</label>
+                  </div>
+                  <div class="col-12 col-sm-8">
+                     <input type="number" class="form-control" name="num_pieza_proveedor" required="required">
+                  </div>
+               </div>
+            </div>
+         </fieldset>
+         <input type="submit" class="btn btn-success col-12 col-sm-4 offset-sm-1" value="Añadir artículo" style="margin-bottom: 1%;">
+         <input type="reset" class="btn btn-danger col-12 col-sm-4 offset-sm-1" value="Cancelar" style="margin-bottom: 1%;">        
+      </form>
+   </div>
+</div>

@@ -1,7 +1,7 @@
 <div class="row" id="ventanaTitulo">
 	<div class="col-12">
-		<span class="icon-devolver"></span>
-		<span>Devolver stock</span>
+		<span class="icon-recibir"></span>
+		<span>Recibir stock</span>
 	</div>
 </div>
 <br>
@@ -52,7 +52,7 @@
                <div class="form-group">
                   <div class="row">
                      <div class="col-12 col-sm-4">
-                        <label for="fecha_devolucion">Fecha de devolución:</label>
+                        <label for="fecha_recibida">Fecha recibida:</label>
                      </div>
                      <div class="col-12 col-sm-8">
                         <input type="date" class="form-control" value="">

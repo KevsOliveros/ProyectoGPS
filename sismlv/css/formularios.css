@@ -1,0 +1,25 @@
+#ventanaTitulo {
+	background: #333;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+	color: white;
+}
+
+#formulario {
+	margin: 0;
+	padding: 0;
+}
+
+.boton-form {
+	margin-bottom: 1%;
+}
+
+#formularioInventario {
+	display: none;
+}
+
+#tabla-contenedor {
+	margin: 0;
+	padding: 0;
+}

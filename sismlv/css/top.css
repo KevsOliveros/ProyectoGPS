@@ -1,0 +1,57 @@
+#encabezado {
+   background: #3C434D;
+   height: 50px;
+}
+
+#div_logo {
+   height: 50px;
+   background: #3C434D;
+}
+
+#logo {
+   margin-top: 5px;
+}
+
+#titulo {
+   color: white;
+   padding: 0;
+}
+
+#div_main {
+   height: 100%;
+}
+
+#div_titulo {
+   background: #3C434D;
+   height: 50px;
+}
+
+#menu {
+   background: #3C434D;
+}
+
+#menu a {
+   color: white;
+   text-decoration: none;
+   font-size: 2em;
+}
+
+#usuario {
+   height: 50px;
+   font-size: 2em;
+   color: white;
+   background: #3C434D;
+}
+
+#logoUsuario {
+   color: white;
+}
+
+@media only screen and (min-width: 768px) {
+   #ajuste-top {
+      display: none;
+   }
+   #menu {
+      display: none;
+   }
+}

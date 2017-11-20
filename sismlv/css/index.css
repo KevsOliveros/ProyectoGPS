@@ -1,0 +1,16 @@
+html, body {
+   font-family: 'Source Sans Pro', sans-serif;
+   height: auto;
+   
+}
+
+.container-fluid {
+   height: auto;
+   /* overflow-y: hidden; */
+}
+
+#main {
+	background: #F5F5F5;
+   height: auto;
+   padding: 0;
+}

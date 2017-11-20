@@ -1,170 +1,318 @@
-<div id="dashboard">
-	<div class="dopcionMenu" id="dinventario">
-		<img class="diconoMenu" src="images/iconos/inventario.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Inventario</p>
-	</div>
-	<div class="dsubmenu" id="dsubmenuInventario">
-		<a href="articulo-nuevo.php">
-			<div class="dsubOpcionMenu" id="dnuevoArticulo">
-				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoArticulo">
-				<p class="dtituloSubOpcionMenu">Nuevo Artículo</p>
-			</div>
-		</a>
-		<a href="articulo-editar.php">
-			<div class="dsubOpcionMenu" id="deditarArticulo">
-				<img class="dsubIconoMenu" src="images/iconos/editar.png" alt="editarArticulo">
-				<p class="dtituloSubOpcionMenu">Editar Artículo</p>
-			</div>
-		</a>
-		<div class="dsubOpcionMenu" id="deliminarArticulo">
-			<img class="dsubIconoMenu" src="images/iconos/eliminar.png" alt="eliminarArticulo">
-			<p class="dtituloSubOpcionMenu">Eliminar Artículo</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dbuscarArticulo">
-			<img class="dsubIconoMenu" src="images/iconos/buscar.png" alt="buscarArticulo">
-			<p class="dtituloSubOpcionMenu">Buscar Artículo</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dabrirListaPedidos">
-			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaPedidos">
-			<p class="dtituloSubOpcionMenu">Abrir Lista de Pedidos</p>
-		</div>
-		<a href="venta-stock.php">
-			<div class="dsubOpcionMenu" id="dvenderStock">
-				<img class="dsubIconoMenu" src="images/iconos/vender.png" alt="venderStock">
-				<p class="dtituloSubOpcionMenu">Vender Stock</p>
-			</div>
-		</a>
-		<div class="dsubOpcionMenu" id="drecibirStock">
-			<img class="dsubIconoMenu" src="images/iconos/recibir.png" alt="recibir">
-			<p class="dtituloSubOpcionMenu">Recibir Stock</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dpedirStock">
-			<img class="dsubIconoMenu" src="images/iconos/pedir.png" alt="pedirStock">
-			<p class="dtituloSubOpcionMenu">Pedir Stock</p>
-		</div>
-		<div class="dsubOpcionMenu" id="ddevolverStock">
-			<img class="dsubIconoMenu" src="images/iconos/devolver.png" alt="devolverStock">
-			<p class="dtituloSubOpcionMenu">Devolver Stock</p>
-		</div>
-	</div>
-	<div class="dopcionMenu" id="ddeptoArea">
-		<img class="diconoMenu" src="images/iconos/deptoarea.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Depto. y Área</p>
-	</div>
-	<div class="dsubmenu" id="dsubmenuDeptoArea">
-		<a href="depto-nuevo.php">
-			<div class="dsubOpcionMenu" id="dnuevoDepto">
-				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoDepto">
-				<p class="dtituloSubOpcionMenu">Nuevo Depto. y Área</p>
-			</div>
-		</a>
-		<a href="depto-lista.php">
-			<div class="dsubOpcionMenu" id="dabrirDeptos">
-				<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirDeptos">
-				<p class="dtituloSubOpcionMenu">Abrir lista de deptos.</p>
-			</div>
-		</a>
-	</div>
-	<div class="dopcionMenu" id="dalmacen">
-		<img class="diconoMenu" src="images/iconos/almacen.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Almacén</p>
-	</div>
-	<div class="dsubmenu" id="dsubmenuAlmacen">
-		<a href="almacen-nuevo.php">
-			<div class="dsubOpcionMenu" id="dnuevoAlmacen">
-				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoAlmacen">
-				<p class="dtituloSubOpcionMenu">Nuevo Almacén</p>
-			</div>
-		</a>
-		<a href="almacen-lista.php">
-			<div class="dsubOpcionMenu" id="dabrirListaAlmacen">
-				<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaAlmacen">
-				<p class="dtituloSubOpcionMenu">Abrir Lista</p>
-			</div>
-		</a>
-	</div>
-	<div class="dopcionMenu" id="dproveedor">
-		<img class="diconoMenu" src="images/iconos/proveedor.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Proveedores</p>
-	</div>
-	<div class="dsubmenu" id="dsubmenuProveedor">
-		<a href="proveedor-nuevo.php">
-			<div class="dsubOpcionMenu" id="dnuevoProveedor">
-				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoProveedor">
-				<p class="dtituloSubOpcionMenu">Nuevo Proveedor</p>
-			</div>
-		</a>
-		<a href="proveedor-lista.php">
-			<div class="dsubOpcionMenu" id="dabrirListaProveedor">
-				<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaProveedor">
-				<p class="dtituloSubOpcionMenu">Abrir Lista</p>
-			</div>
-		</a>
-	</div>
-	<div class="dopcionMenu" id="dcliente">
-		<img class="diconoMenu" src="images/iconos/cliente.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Clientes</p>
-	</div>
-	<div class="dsubmenu" id="dsubmenuCliente">
-		<a href="cliente-nuevo.php">
-			<div class="dsubOpcionMenu" id="dnuevoCliente">
-				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoCliente">
-				<p class="dtituloSubOpcionMenu">Nuevo Cliente</p>
-			</div>
-		</a>
-		<a href="cliente-lista.php">
-			<div class="dsubOpcionMenu" id="dabrirListaCliente">
-				<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="abrirListaCliente">
-				<p class="dtituloSubOpcionMenu">Abrir Lista</p>
-			</div>
-		</a>
-	</div>
-	<div class="dopcionMenu" id="dinformes">
-		<img class="diconoMenu" src="images/iconos/informe.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Informes</p>
-	</div>
-	<div class="dsubmenu" id="dsubmenuInforme">
-		<div class="dsubOpcionMenu" id="dverInforme">
-			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="verInforme">
-			<p class="dtituloSubOpcionMenu">Informes</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dverInformeAyD">
-			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="verInformeAyD">
-			<p class="dtituloSubOpcionMenu">Almacén y Categoría</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dverInformePP">
-			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="verInformePP">
-			<p class="dtituloSubOpcionMenu">Proveedor Predeterminado</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dverInformePedP">
-			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="verInformePedP">
-			<p class="dtituloSubOpcionMenu">Pedido Pendiente</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dverInformeV">
-			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="verInformeV">
-			<p class="dtituloSubOpcionMenu">Informe de Ventas</p>
-		</div>
-	</div>
-	<div class="dopcionMenu" id="dgraficas">
-		<img class="diconoMenu" src="images/iconos/graficas.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Gráficas</p>
-	</div>
-	<div class="dsubmenu" id="dsubmenuGrafica">
-		<div class="dsubOpcionMenu" id="dverGrafica">
-			<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="verGrafica">
-			<p class="dtituloSubOpcionMenu">Por Filtro</p>
-		</div>
-		<div class="dsubOpcionMenu" id="dverCronograma">
-			<img class="dsubIconoMenu" src="images/iconos/ver.png" alt="verCronograma">
-			<p class="dtituloSubOpcionMenu">Cronograma</p>
-		</div>
-	</div>
-	<div class="dopcionMenu">
-		<img class="diconoMenu" src="images/iconos/auditoria.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Auditorías</p>
-	</div>
-	<div class="dopcionMenu">
-		<img class="diconoMenu" src="images/iconos/bitacora.png" alt="inventario">
-		<p class="dtituloOpcionMenu">Bitácora</p>
-	</div>
-</div>
+            <div class="col-10 col-sm-3 col-lg-2" id="dashboard">
+                <!-- Inventario -->
+                <a class="row opcionDashboard" href="#" id="dinventario">
+                    <div class="col-2">
+                        <span class="icon-inventario iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Inventario
+                    </div>
+                    <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div id="dsubmenuInventario">
+                    <!-- Nuevo Artículo -->
+                    <a class="row dsubOpcionMenu" href="i-articulo-nuevo.php" id="dnuevoArticulo">
+                        <div class="col-2">
+                            <span class="icon-nuevo iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Nuevo Artículo</span>
+                        </div>
+                    </a>
+                    <!-- Editar Artículo -->
+                    <a class="row dsubOpcionMenu" href="i-articulo-editar.php" id="deditarArticulo">
+                        <div class="col-2">
+                            <span class="icon-editar iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Editar Artículo</span>
+                        </div>
+                    </a>
+                    <!-- Eliminar Artículo -->
+                    <a class="row dsubOpcionMenu" href="i-eliminar-articulo.php" id="dEliminarArticulo">
+                        <div class="col-2">
+                            <span class="icon-eliminar iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Eliminar Artículo</span>
+                        </div>
+                    </a>
+                    <!-- Buscar Artículo -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-buscar iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Buscar Artículo</span>
+                        </div>
+                    </a>
+                    <!-- Abrir Lista de Pedidos -->
+                    <a class="row dsubOpcionMenu" href="i-abrir-lista-pedidos.php" id="dlistaPedidos">
+                        <div class="col-2">
+                            <span class="icon-ver iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Abrir Lista de Pedidos</span>
+                        </div>
+                    </a>
+                    <!-- Vender Stock -->
+                    <a class="row dsubOpcionMenu" href="i-vender-stock.php" id="dvenderStock">
+                        <div class="col-2">
+                            <span class="icon-vender iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Vender Stock</span>
+                        </div>
+                    </a>
+                    <!-- Recibir Stock -->
+                    <a class="row dsubOpcionMenu" href="i-recibir-stock.php" id="dnuevoArticulo">
+                        <div class="col-2">
+                            <span class="icon-recibir iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Recibir Stock</span>
+                        </div>
+                    </a>
+                    <!-- Pedir Stock -->
+                    <a class="row dsubOpcionMenu" href="i-pedir-stock.php" id="dnuevoArticulo">
+                        <div class="col-2">
+                            <span class="icon-pedir iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Pedir Stock</span>
+                        </div>
+                    </a>
+                    <!-- Devolver Stock -->
+                    <a class="row dsubOpcionMenu" href="i-devolver-stock.php" id="dnuevoArticulo">
+                        <div class="col-2">
+                            <span class="icon-devolver iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Devolver Stock</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Depto. área -->
+                <a class="row opcionDashboard" href="#" id="ddeptoArea">
+                    <div class="col-2">
+                        <span class="icon-depto-area iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Depto. Área
+                    </div>
+                    <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div id="dsubmenuDeptoArea">
+                    <!-- Nuevo Departamento y área -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-nuevo iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Nuevo Depto. y Área</span>
+                        </div>
+                    </a>
+                    <!-- Ver Departamento y área -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-ver iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Ver Depto. y Área</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Almacén -->
+                <a class="row opcionDashboard" href="#" id="dalmacen">
+                    <div class="col-2">
+                        <span class="icon-almacen iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Almacén
+                    </div>
+                    <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div id="dsubmenuAlmacen">
+                    <!-- Nuevo Almacén -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-nuevo iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Nuevo Almacén</span>
+                        </div>
+                    </a>
+                    <!-- Ver Almacén -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-ver iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Ver Almacenes</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Proveedores -->
+                <a class="row opcionDashboard" href="#" id="dproveedor">
+                    <div class="col-2">
+                        <span class="icon-proveedor iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Proveedores
+                    </div>
+                    <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div id="dsubmenuProveedor">
+                    <!-- Nuevo Proovedor -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-nuevo iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Nuevo Proovedor</span>
+                        </div>
+                    </a>
+                    <!-- Ver Proovedor -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-ver iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Ver Proovedores</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Clientes -->
+                <a class="row opcionDashboard" href="#" id="dcliente">
+                    <div class="col-2">
+                        <span class="icon-cliente iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Clientes
+                    </div>
+                    <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div id="dsubmenuCliente">
+                    <!-- Nuevo Cliente -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-nuevo iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Nuevo Cliente</span>
+                        </div>
+                    </a>
+                    <!-- Ver Cliente -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-ver iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Ver Clientes</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Informes -->
+                <a class="row opcionDashboard" href="#" id="dinformes">
+                    <div class="col-2">
+                        <span class="icon-informe iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Informes
+                    </div>
+                    <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div id="dsubmenuInforme">
+                    <!-- Informes -->
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-informe iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Informes</span>
+                        </div>
+                    </a>
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-informe iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Informe por Almacén y Departamento</span>
+                        </div>
+                    </a>
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-informe iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Informe por proveedor predeterminado.</span>
+                        </div>
+                    </a>
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-informe iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Informe de pedido pendiente</span>
+                        </div>
+                    </a>
+                    <a class="row dsubOpcionMenu" href="" id="">
+                        <div class="col-2">
+                            <span class="icon-informe iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Informe de ventas</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gráficas -->
+                <a class="row opcionDashboard" href="#" id="dgraficas">
+                    <div class="col-2">
+                        <span class="icon-grafica iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Gráficas
+                    </div>
+                    <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </a>
+
+                <!-- Auditorías -->
+                <a class="row opcionDashboard" href="#">
+                    <div class="col-2">
+                        <span class="icon-auditoria iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Auditorías
+                    </div>
+                    <!-- <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div> -->
+                </a>
+
+                <!-- Bitácora -->
+                <a class="row opcionDashboard" href="#">
+                    <div class="col-2">
+                        <span class="icon-bitacora iconoOpcion"></span>
+                    </div>
+                    <div class="col-8">
+                        Bitácora
+                    </div>
+                    <!-- <div class="col-2">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div> -->
+                </a>
+            </div>

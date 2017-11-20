@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Menu Principal</title>
+    <title>Recibir stock</title>
     <?php require_once 'meta_tags.php';?>
     <?php require_once 'libs_css.php';?>
     <?php require_once 'font_awesome.php';?>
@@ -25,11 +25,12 @@
         <div class="row" id="div_main">
             <?php require_once 'dashboard.php';?>
             <div class="col-12 col-sm-9 col-lg-10" id="main">
-                <?php require_once 'seccion-principal.php'?>
+                <?php require_once 'recibir-stock.php'?>
             </div>
         </div>
     </div>
     <?php require_once 'scripts.php';?>
     <script src="js/data-table.js"></script>
+    <script src="js/recibir-stock.js"></script>
 </body>
 </html>

@@ -13,12 +13,12 @@
 		</div>
 	</div>
 </div>
-<hr id="separacion">
 <div class="row">
 	<div class="col-12">
 		<div class="row" id="nombreUsuario">
-			<div class="col-8 offset-4" id="mensajeNombre">
-				<p>Bienvenido usuario</p>
+			<div class="col-12 text-right" id="mensajeNombre">
+				<p>Bienvenido usuario   <i class="fa fa-user-md" aria-hidden="true"></i></p>
+				
 			</div>
 		</div>
 	</div>

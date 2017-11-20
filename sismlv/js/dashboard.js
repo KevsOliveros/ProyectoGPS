@@ -1,17 +1,17 @@
 $(document).ready(function(){
    var contador = 1;
    var abierto;
-   $("#botonMenu").click(function() {
+   $("#menu").click(function() {
       if(contador == 1) {
-         $("#dashboard").animate({
-            left: "0"
+         $("#dashboard").css({
+            display: "block"
          });
          contador = 0;
       }
       else {
          contador = 1;
-         $("#dashboard").animate({
-            left: "-100%"
+         $("#dashboard").css({
+            display: "none"
          });
       }
    });
