@@ -1,3 +1,4 @@
+<?php require_once 'verificarusuario.php';?>
 <div class="row">
 	<div class="col-12">
 		<div class="row" id="menu-top">

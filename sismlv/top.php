@@ -1,4 +1,5 @@
-            <div class="row">
+            <?php require_once 'verificarusuario.php';?>
+               <div class="row">
                 <div class="col-12" id="encabezado">
                     <div class="row">
                         <div class="col-2 col-md-1" id="div_logo">
@@ -18,9 +19,10 @@
                         </div>
                         <div class="col-12 col-md-5 offset-md-3 text-right" id="usuario">
                             <span>Bienvenido usuario</span>
-                            <a href="#" id="logoUsuario">
+                            <a href="cerrarsesion.php" id="logoUsuario">
                                 <i class="fa fa-user-md" aria-hidden="true"></i>
                             </a>
+                            
                         </div>
                     </div>
                 </div>
