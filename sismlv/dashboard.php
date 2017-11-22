@@ -260,7 +260,7 @@
                             <span class="dtituloSubOpcionMenu">Informe por proveedor predeterminado.</span>
                         </div>
                     </a>
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="i-pedido-pendiente-informe.php" id="">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
