@@ -23,3 +23,17 @@
 	margin: 0;
 	padding: 0;
 }
+
+#resumen-informe {
+	background-color: #E7E7E7;
+	margin: 0;
+	padding: 0;
+}
+
+#resumen-titulo {
+	font-size: 2em;
+}
+
+#resumen-datos {
+	font-size: 1.5em;
+}

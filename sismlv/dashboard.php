@@ -236,12 +236,12 @@
                 </a>
                 <div id="dsubmenuInforme">
                     <!-- Informes -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="i-informe-inventario.php" id="">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
                         <div class="col-10">
-                            <span class="dtituloSubOpcionMenu">Informes</span>
+                            <span class="dtituloSubOpcionMenu">Inventario</span>
                         </div>
                     </a>
                     <a class="row dsubOpcionMenu" href="" id="">
