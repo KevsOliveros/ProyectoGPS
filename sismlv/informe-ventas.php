@@ -1,7 +1,7 @@
 <div class="row" id="ventanaTitulo">
 	<div class="col-12">
 		<span class="icon-informe"></span>
-		<span>Informe de pedido pendiente</span>
+		<span>Informe de ventas</span>
 	</div>
 </div>
 <div class="row" id="opciones">
@@ -28,7 +28,7 @@
 <div class="row" id="resumen-informe">
    <div class="col-12 col-md-12 text-center" id="resumen-titulo">
       &nbsp&nbsp&nbsp<i class="fa fa-bar-chart" aria-hidden="true"></i>
-      &nbsp&nbsp&nbspInforme de pedido pendiente
+      &nbsp&nbsp&nbspInforme de ventas
    </div>
 </div>
 <br>
@@ -37,14 +37,13 @@
       <table class="table table-bordered table-responsive table-hover text-center">
          <thead class="thead-dark">
             <tr>
-               <th>Cantidad</th>
                <th>Artículo</th>
-               <th>Proveedor</th>
-               <th>Pedido</th>
-               <th>Almacén</th>
-               <th>Valor unitario</th>
-               <th>Fecha de recibo</th>
-               <th>Recurrente</th>
+               <th>Cantidad</th>
+               <th>Valor de costo</th>
+               <th>Valor de precio</th>
+               <th>Costo total</th>
+               <th>Venta total</th>
+               <th>Ganancia bruta</th>
             </tr>
          </thead>
          <tbody>
@@ -56,9 +55,13 @@
                <td></td>
                <td></td>
                <td></td>
-               <td></td>
             </tr>
          </tbody>
       </table>
+   </div>
+</div>
+<div class="row" id="resumen-informe">
+   <div class="col-12" id="resumen-titulo">
+      Total: $0.00
    </div>
 </div>

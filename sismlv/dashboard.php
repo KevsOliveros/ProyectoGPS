@@ -244,7 +244,7 @@
                             <span class="dtituloSubOpcionMenu">Inventario</span>
                         </div>
                     </a>
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="" id="" data-toggle="modal" data-target="#modal-almacen-depto">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
@@ -252,7 +252,7 @@
                             <span class="dtituloSubOpcionMenu">Informe por Almacén y Departamento</span>
                         </div>
                     </a>
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="" id="" data-toggle="modal" data-target="#modal-proveedor-predeterminado">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
@@ -268,7 +268,7 @@
                             <span class="dtituloSubOpcionMenu">Informe de pedido pendiente</span>
                         </div>
                     </a>
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="" id="" data-toggle="modal" data-target="#modal-ventas">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
@@ -316,3 +316,7 @@
                     </div> -->
                 </a>
             </div>
+
+            <?php require_once 'modal-informe-almacen-depto.php'; ?>
+            <?php require_once 'modal-informe-proveedor-predeterminado.php'; ?>
+            <?php require_once 'modal-informe-ventas.php'; ?>
