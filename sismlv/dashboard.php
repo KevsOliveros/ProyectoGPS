@@ -149,7 +149,7 @@
                         </div>
                     </a>
                     <!-- Ver Almacén -->
-                    <a class="row dsubOpcionMenu" href="almacen-lista.php" id="">
+                    <a class="row dsubOpcionMenu" href="i-almacen-lista.php" id="">
                         <div class="col-2">
                             <span class="icon-ver iconoOpcion"></span>
                         </div>
