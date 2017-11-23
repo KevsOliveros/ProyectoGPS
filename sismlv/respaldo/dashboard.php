@@ -70,10 +70,10 @@
 		<p class="dtituloOpcionMenu">Almacén</p>
 	</div>
 	<div class="dsubmenu" id="dsubmenuAlmacen">
-		<a href="almacen-nuevo.php">
+		<a href="i-almacen-nuevo.php">
 			<div class="dsubOpcionMenu" id="dnuevoAlmacen">
 				<img class="dsubIconoMenu" src="images/iconos/nuevo.png" alt="nuevoAlmacen">
-				<p class="dtituloSubOpcionMenu">Nuevo Almacén</p>
+				<p class="dtituloSubOpcionMenu">Nuevo </p>
 			</div>
 		</a>
 		<a href="almacen-lista.php">

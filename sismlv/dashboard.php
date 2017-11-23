@@ -40,14 +40,14 @@
                         </div>
                     </a>
                     <!-- Buscar Artículo -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <!-- <a class="row dsubOpcionMenu" href="" id="">
                         <div class="col-2">
                             <span class="icon-buscar iconoOpcion"></span>
                         </div>
                         <div class="col-10">
                             <span class="dtituloSubOpcionMenu">Buscar Artículo</span>
                         </div>
-                    </a>
+                    </a> -->
                     <!-- Abrir Lista de Pedidos -->
                     <a class="row dsubOpcionMenu" href="i-abrir-lista-pedidos.php" id="dlistaPedidos">
                         <div class="col-2">
@@ -108,7 +108,7 @@
                 </a>
                 <div id="dsubmenuDeptoArea">
                     <!-- Nuevo Departamento y área -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="depto-nuevo.php" id="">
                         <div class="col-2">
                             <span class="icon-nuevo iconoOpcion"></span>
                         </div>
@@ -117,7 +117,7 @@
                         </div>
                     </a>
                     <!-- Ver Departamento y área -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="depto-lista.php" id="">
                         <div class="col-2">
                             <span class="icon-ver iconoOpcion"></span>
                         </div>
@@ -140,7 +140,7 @@
                 </a>
                 <div id="dsubmenuAlmacen">
                     <!-- Nuevo Almacén -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="i-almacen-nuevo.php" id="">
                         <div class="col-2">
                             <span class="icon-nuevo iconoOpcion"></span>
                         </div>
@@ -149,7 +149,7 @@
                         </div>
                     </a>
                     <!-- Ver Almacén -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="almacen-lista.php" id="">
                         <div class="col-2">
                             <span class="icon-ver iconoOpcion"></span>
                         </div>
@@ -172,7 +172,7 @@
                 </a>
                 <div id="dsubmenuProveedor">
                     <!-- Nuevo Proovedor -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="i-proveedor-nuevo.php" id="">
                         <div class="col-2">
                             <span class="icon-nuevo iconoOpcion"></span>
                         </div>
@@ -181,7 +181,7 @@
                         </div>
                     </a>
                     <!-- Ver Proovedor -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="proveedor-lista.php" id="">
                         <div class="col-2">
                             <span class="icon-ver iconoOpcion"></span>
                         </div>
@@ -204,7 +204,7 @@
                 </a>
                 <div id="dsubmenuCliente">
                     <!-- Nuevo Cliente -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="cliente-nuevo.php" id="">
                         <div class="col-2">
                             <span class="icon-nuevo iconoOpcion"></span>
                         </div>
@@ -213,7 +213,7 @@
                         </div>
                     </a>
                     <!-- Ver Cliente -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="cliente-lista.php" id="">
                         <div class="col-2">
                             <span class="icon-ver iconoOpcion"></span>
                         </div>
@@ -236,15 +236,15 @@
                 </a>
                 <div id="dsubmenuInforme">
                     <!-- Informes -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="i-informe-inventario.php" id="">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
                         <div class="col-10">
-                            <span class="dtituloSubOpcionMenu">Informes</span>
+                            <span class="dtituloSubOpcionMenu">Inventario</span>
                         </div>
                     </a>
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="" id="" data-toggle="modal" data-target="#modal-almacen-depto">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
@@ -252,7 +252,7 @@
                             <span class="dtituloSubOpcionMenu">Informe por Almacén y Departamento</span>
                         </div>
                     </a>
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="" id="" data-toggle="modal" data-target="#modal-proveedor-predeterminado">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
@@ -260,7 +260,7 @@
                             <span class="dtituloSubOpcionMenu">Informe por proveedor predeterminado.</span>
                         </div>
                     </a>
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="i-pedido-pendiente-informe.php" id="">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
@@ -268,7 +268,7 @@
                             <span class="dtituloSubOpcionMenu">Informe de pedido pendiente</span>
                         </div>
                     </a>
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <a class="row dsubOpcionMenu" href="" id="" data-toggle="modal" data-target="#modal-ventas">
                         <div class="col-2">
                             <span class="icon-informe iconoOpcion"></span>
                         </div>
@@ -316,3 +316,7 @@
                     </div> -->
                 </a>
             </div>
+
+            <?php require_once 'modal-informe-almacen-depto.php'; ?>
+            <?php require_once 'modal-informe-proveedor-predeterminado.php'; ?>
+            <?php require_once 'modal-informe-ventas.php'; ?>

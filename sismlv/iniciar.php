@@ -1,4 +1,5 @@
 <?php
+session_start();
 $usuario=$_POST['usuario'];
 $pass=$_POST['pass'];
 $con=mysqli_connect("localhost","root","Privada","sismlv");
@@ -9,10 +10,10 @@ $result=mysqli_query($con,$query);
 echo "<script>alert('Resultado' +   )</script>";
 if(mysqli_num_rows($result)>0  && mysqli_num_rows($result)<2){
    
-    session_start();
+    
     $_SESSION['token_Id']=1;
     $_SESSION['current_user'] = $usuario;
-    header("Location: menu.php");
+   echo "<script>document.location.href='menu.php';</script>";
     
      
 }

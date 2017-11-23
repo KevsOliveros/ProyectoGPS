@@ -19,7 +19,7 @@ VALUES ('$nombre_p', '$persona_p', '$nombre_contacto_p', '$direccion', '$telefon
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
-    header("Location: proveedor-lista.php");
+    echo "<script>document.location.href='proveedor-lista.php.php';</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

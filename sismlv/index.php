@@ -1,3 +1,8 @@
+<?php   
+   session_start();
+    if(isset($_SESSION['token_Id'])) 
+    echo "<script>document.location.href='menu.php';</script>";
+?>
 <!doctype html>
 <html lang="es">
 
