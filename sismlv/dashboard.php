@@ -40,14 +40,14 @@
                         </div>
                     </a>
                     <!-- Buscar Artículo -->
-                    <a class="row dsubOpcionMenu" href="" id="">
+                    <!-- <a class="row dsubOpcionMenu" href="" id="">
                         <div class="col-2">
                             <span class="icon-buscar iconoOpcion"></span>
                         </div>
                         <div class="col-10">
                             <span class="dtituloSubOpcionMenu">Buscar Artículo</span>
                         </div>
-                    </a>
+                    </a> -->
                     <!-- Abrir Lista de Pedidos -->
                     <a class="row dsubOpcionMenu" href="i-abrir-lista-pedidos.php" id="dlistaPedidos">
                         <div class="col-2">
@@ -140,7 +140,7 @@
                 </a>
                 <div id="dsubmenuAlmacen">
                     <!-- Nuevo Almacén -->
-                    <a class="row dsubOpcionMenu" href="almacen-nuevo.php" id="">
+                    <a class="row dsubOpcionMenu" href="i-almacen-nuevo.php" id="">
                         <div class="col-2">
                             <span class="icon-nuevo iconoOpcion"></span>
                         </div>

@@ -41,42 +41,12 @@
 								<th>Cant. venta</th>
 								<th>Precio</th>
 								<th>Cant. stock</th>
+								<th>Quitar</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -89,8 +59,7 @@
 				</div>
 			</div>
 			<br>
-			<button class="btn btn-dark col-12 col-sm-4 offset-sm-1" style="margin-bottom: 1%;">Añadir</button>
-         <button class="btn btn-dark col-12 col-sm-4 offset-sm-1" style="margin-bottom: 1%;">Quitar</button>
+			<button class="btn btn-dark col-12 col-sm-4 offset-sm-4" style="margin-bottom: 1%;">Añadir</button>
 			<div class="form-group">
 				<br>
 				<div class="row">

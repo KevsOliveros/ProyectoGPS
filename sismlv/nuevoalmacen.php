@@ -12,7 +12,7 @@ VALUES ('$nombre', '$direccion', '$nom_usuario')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
-    echo "<script>document.location.href='almacen-lista.php.php';</script>";
+    echo "<script>document.location.href='almacen-lista.php';</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

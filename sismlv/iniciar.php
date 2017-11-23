@@ -2,7 +2,7 @@
 session_start();
 $usuario=$_POST['usuario'];
 $pass=$_POST['pass'];
-$con=mysqli_connect("localhost","root","Privada","sismlv");
+$con=mysqli_connect("localhost","root","","sismlv");
 //$db = mysql_connect('host=localhost dbname=sismlv user=root password=Privada'); 
 $query = "SELECT * FROM usuario WHERE nom_usuario ='$usuario'and pass_usuario = '$pass'";
 //$result = pg_query($query);
