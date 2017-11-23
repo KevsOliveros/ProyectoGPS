@@ -181,7 +181,7 @@
                         </div>
                     </a>
                     <!-- Ver Proovedor -->
-                    <a class="row dsubOpcionMenu" href="proveedor-lista.php" id="">
+                    <a class="row dsubOpcionMenu" href="i-proveedor-lista.php" id="">
                         <div class="col-2">
                             <span class="icon-ver iconoOpcion"></span>
                         </div>
