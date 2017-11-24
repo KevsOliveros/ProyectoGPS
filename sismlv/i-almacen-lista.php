@@ -1,13 +1,8 @@
 <!doctype html>
-<?php   
-   session_start();
-    if(!isset($_SESSION['token_Id'])) 
-    echo "<script>document.location.href='index.php';</script>";
-?>
 <html lang="es">
 
 <head>
-    <title>Nuevo Artículo</title>
+    <title>Lista de almacenes</title>
     <?php require_once 'meta_tags.php';?>
     <?php require_once 'libs_css.php';?>
     <?php require_once 'font_awesome.php';?>
@@ -30,12 +25,13 @@
         <div class="row" id="div_main">
             <?php require_once 'dashboard.php';?>
             <div class="col-12 col-sm-9 col-lg-10" id="main">
-                <?php require_once 'articulo-nuevo.php'?>
+                <?php require_once 'almacen-lista2.php'?>
             </div>
         </div>
     </div>
     <?php require_once 'scripts.php';?>
     <!-- script mostrar/ocultar secciones de nuevo articulo -->
     <script src="js/nuevo-articulo.js"></script>
+    <script src="js/data-table.js"></script>
 </body>
 </html>

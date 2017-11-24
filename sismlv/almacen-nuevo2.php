@@ -21,7 +21,7 @@
 			<div class="form-group">
 				<div class="row">
 					<div class="col-12 col-lg-4">
-						<label for="descripcion">Descripción:</label>
+						<label for="direccion_almacen">Dirección:</label>
 					</div>
 					<div class="col-12 col-lg-8">
 						<textarea  class="form-control" id="exampleFormControlTextarea1" rows="3" name="direccion_almacen" required="required"></textarea>
