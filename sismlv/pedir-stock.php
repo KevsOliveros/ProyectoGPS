@@ -18,9 +18,6 @@
                      <option value="" selected disabled>-- Seleccione una opción --</option>
                   </select>
                </div>
-               <div class="col-1">
-                  <div class="btn btn-dark"><i class="fa fa-binoculars" aria-hidden="true"></i></div>
-               </div>
                <div class="col-1 col-sm-1 offset-1 offset-sm-0">
                   <div class="btn btn-dark"><i class="fa fa-plus" aria-hidden="true"></i></div>
                </div>
@@ -42,17 +39,7 @@
                   <label for="fecha_emision">Fecha de emisión:</label>
                </div>
                <div class="col-12 col-sm-8">
-                  <input type="date" name="fecha_emision" class="form-control">
-               </div>
-            </div>
-         </div>
-         <div class="form-group">
-            <div class="row">
-               <div class="col-12 col-sm-4">
-                  <label for="impuesto">Impuesto:</label>
-               </div>
-               <div class="col-12 col-sm-8">
-                  <input type="number" name="impuesto" class="form-control" min="0">
+                  <input type="date" name="fecha_emision" class="form-control" value="<?php echo date('Y-m-d'); ?>">
                </div>
             </div>
          </div>
@@ -112,15 +99,10 @@
                   <div class="form-group">
                      <div class="row">
                         <div class="col-12 col-sm-4">
-                           <label for="metodo_envio">Enviar por:</label>
+                           <label for="metodo_envio">Medio de envío:</label>
                         </div>
-                        <div class="col-10 col-sm-6">
-                           <select name="metodo_envio" class="form-control custom-select" required="required">
-                              <option value="" selected disabled>-- Seleccione una opción --</option>
-                           </select>
-                        </div>
-                        <div class="col-1 col-sm-1">
-                           <div class="btn btn-dark"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                        <div class="col-10 col-sm-7">
+                           <input type="text" name="metodo_envio" class="form-control" required="required">
                         </div>
                      </div>
                   </div>
@@ -167,23 +149,13 @@
                      </div>
                   </div>
                </div>
-               <div class="form-group">
-                  <div class="row">
-                     <div class="col-12 col-sm-4">
-                        <label for="notas_internas">Notas internas:</label>
-                     </div>
-                     <div class="col-12 col-sm-8">
-                        <textarea class="form-control" name="notas_internas" cols="30" rows="5"></textarea>
-                     </div>
-                  </div>
-               </div>
          <div class="row">
             <div class="col-12">
                <b>Total: $00.00</b>
             </div>
          </div>
          <select class="btn btn-success col-12 col-sm-4 offset-sm-1" style="margin-bottom: 1%;">
-            <option value="">Registrar e imprimir</option>
+            <option value="">Imprimir</option>
             <option value="">Guardar como borrador</option>
             <option value="">Guardar como recurrente</option>
             <option value="">Registrar</option>
