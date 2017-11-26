@@ -1,4 +1,4 @@
-            <?php require_once 'verificarusuario.php';?>
+           <?php session_start(); $nombre = $_SESSION['nombre_del_user']; ?>
                <div class="row">
                 <div class="col-12" id="encabezado">
                     <div class="row">
@@ -18,7 +18,7 @@
                             </a>
                         </div>
                         <div class="col-12 col-md-5 offset-md-3 text-right" id="usuario">
-                            <span>Bienvenido usuario</span>
+                            <span>Bienvenido <?php echo $nombre; ?></span>
                             <a href="cerrarsesion.php" id="logoUsuario">
                                 <i class="fa fa-user-md" aria-hidden="true"></i>
                             </a>

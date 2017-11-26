@@ -2,17 +2,20 @@
 session_start();
 $usuario=$_POST['usuario'];
 $pass=$_POST['pass'];
-$con=mysqli_connect("localhost","root","Privada","sismlv");
-//$db = mysql_connect('host=localhost dbname=sismlv user=root password=Privada'); 
-$query = "SELECT * FROM usuario WHERE nom_usuario ='$usuario'and pass_usuario = '$pass'";
+require 'conn.php'; 
+$query = "SELECT AES_DECRYPT(nom_usuario,UNHEX('000')) AS nom_usuario, AES_DECRYPT(pass_usuario,UNHEX('000')) AS pass_usuario, AES_DECRYPT('nombre_del_usuario',UNHEX('000')) AS nombre_del_usuario FROM usuario WHERE nom_usuario = AES_ENCRYPT('$usuario',UNHEX('000')) and pass_usuario = AES_ENCRYPT('$pass',UNHEX('000'))";
 //$result = pg_query($query);
-$result=mysqli_query($con,$query);
-echo "<script>alert('Resultado' +   )</script>";
+$result=mysqli_query($conn,$query);
 if(mysqli_num_rows($result)>0  && mysqli_num_rows($result)<2){
-   
+       // $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        //$_SESSION['nombre_del_user'] = $row[0]['nombre_del_usuario'];
+    
     
     $_SESSION['token_Id']=1;
     $_SESSION['current_user'] = $usuario;
+    //$_SESSION['nombre_del_user'] = $row['nombre_del_usuario'];
+    $_SESSION['nombre_del_user'] = "pruebadirecta";
+    
    echo "<script>document.location.href='menu.php';</script>";
     
      
@@ -23,35 +26,5 @@ else{
     echo "<script>history.go(-1)</script>";
 }
 
-?>
-
-<?php
-/*$usuario=$_POST['usuario'];
-$pass=$_POST['pass'];
-$con=mysqli_connect("localhost","root","Privada","sismlv");
-require 'conectar.php';
-require 'conexion.php';
-
-require 'conn.php';
-$query = "SELECT * FROM usuario WHERE nom_usuario ='$usuario'and pass_usuario = '$pass'";
-//$result = mysql_query($query);
-//$result = mysql_fetch_array("$query");
-$result=mysqli_query($con,$query);
-echo "<script>alert('Resultado'  )</script>";
-if(mysql_num_rows($result)>0  && mysql_num_rows($result)<2){
-   
-    session_start();
-    $_SESSION['token_Id']=1;
-    $_SESSION['current_user'] = $usuario;
-    header("Location: menu.php");
-    
-     
-}
-else{
-    
-    echo "<script>alert('Usuario o Contrasena incorrectos')</script>";
-    echo "<script>history.go(-1)</script>";
-}
-*/
 ?>
 
