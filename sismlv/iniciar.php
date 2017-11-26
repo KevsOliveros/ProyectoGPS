@@ -2,11 +2,12 @@
 session_start();
 $usuario=$_POST['usuario'];
 $pass=$_POST['pass'];
-$con=mysqli_connect("localhost","root","Privada","sismlv");
+//$conn=mysqli_connect("localhost","root","Privada","sismlv");
+require 'conn.php';
 //$db = mysql_connect('host=localhost dbname=sismlv user=root password=Privada'); 
 $query = "SELECT * FROM usuario WHERE nom_usuario ='$usuario'and pass_usuario = '$pass'";
 //$result = pg_query($query);
-$result=mysqli_query($con,$query);
+$result=mysqli_query($conn,$query);
 echo "<script>alert('Resultado' +   )</script>";
 if(mysqli_num_rows($result)>0  && mysqli_num_rows($result)<2){
    
