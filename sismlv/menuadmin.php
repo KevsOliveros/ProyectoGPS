@@ -27,7 +27,7 @@
                       $query = mysqli_query($conn,"SELECT AES_DECRYPT(nom_usuario,UNHEX('000')) AS nom_usuario, AES_DECRYPT(pass_usuario,UNHEX('000')) AS pass_usuario, AES_DECRYPT(nombre_del_usuario,UNHEX('000')) AS nombre_del_usuario FROM usuario");
                     ?>
                            
-    <a href="nuevousuario.php">
+    <a href="i-usuario-nuevo.php">
                                        <div class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"> NUEVO USUARIO</i> </div></a>
                             <br>
                 <table class="table table-bordered table-hover text-center">
