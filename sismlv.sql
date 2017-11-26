@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2017 at 03:28 AM
+-- Generation Time: Nov 26, 2017 at 06:53 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -19,6 +19,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `sismlv`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE IF NOT EXISTS `admin` (
+  `nom_usuario` varchar(200) NOT NULL DEFAULT '',
+  `pass_usuario` varchar(200) DEFAULT NULL,
+  `nombre_del_usuario` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`nom_usuario`, `pass_usuario`, `nombre_del_usuario`) VALUES
+('Q¢!ð¸â–g;£Æ÷N', 'Q¢!ð¸â–g;£Æ÷N', 'XÔkšqY˜ÿ‹½ gY–');
 
 -- --------------------------------------------------------
 
@@ -200,16 +219,15 @@ CREATE TABLE IF NOT EXISTS `proveedor` (
   `telefono_a_proveedor` varchar(200) DEFAULT NULL,
   `fax_proveedor` varchar(200) DEFAULT NULL,
   `email_proveedor` varchar(200) DEFAULT NULL,
-  `nom_usuario` varchar(200) DEFAULT NULL,
-  `name_proveedor` varchar(200) DEFAULT NULL
+  `nom_usuario` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `proveedor`
 --
 
-INSERT INTO `proveedor` (`nombre_proveedor`, `contacto_proveedor`, `nombre_contacto_proveedor`, `telefono_p_proveedor`, `telefono_a_proveedor`, `fax_proveedor`, `email_proveedor`, `nom_usuario`, `name_proveedor`) VALUES
-('a', 'bunch', 'of', '687', '87687', '68768', 'ces@lkj.com', 'admin', NULL);
+INSERT INTO `proveedor` (`nombre_proveedor`, `contacto_proveedor`, `nombre_contacto_proveedor`, `telefono_p_proveedor`, `telefono_a_proveedor`, `fax_proveedor`, `email_proveedor`, `nom_usuario`) VALUES
+('a', 'bunch', 'of', '687', '87687', '68768', 'ces@lkj.com', 'admin');
 
 -- --------------------------------------------------------
 
@@ -241,12 +259,9 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`nom_usuario`, `pass_usuario`, `nombre_del_usuario`) VALUES
-('3z7_B··è¥Añ"', '·''êêUÍ³ê0»ÿ¨', 'DŽÁF¹Ýó¶U8É0'),
-('admin', 'admin', NULL),
-('men', 'encri', 'ptado'),
-('prueba', 'prueba', NULL),
-('test', 'test', NULL),
-(']Ž!,t–<¹U[ê°q', '[¥a¸¯÷\\–9Ý¬êq', 'Ï&q\\ý|4@©ªx…i_');
+('IŒÊÁâŽ.…&ô‰Å', 'IŒÊÁâŽ.…&ô‰Å', '(xeû~fyô_yDcÓk²o'),
+('Ù!Äçpq?´*orˆ—CÛcîf°ÍÿŸi‘v€', '‰Š»èšnÁÝ!i“ä]hCÛcîf°ÍÿŸi‘v€', 'u¶è8qO:ïsõÛ<É­ CÛcîf°ÍÿŸi‘v€'),
+('©12hï0¡Øÿ°aÎ*Yw', '©12hï0¡Øÿ°aÎ*Yw', 'iò3''õ2tq-Ÿcl');
 
 -- --------------------------------------------------------
 
@@ -268,6 +283,13 @@ CREATE TABLE IF NOT EXISTS `venta` (
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`nom_usuario`),
+  ADD UNIQUE KEY `nom_usuario` (`nom_usuario`);
 
 --
 -- Indexes for table `administradores`
