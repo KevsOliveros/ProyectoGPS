@@ -7,7 +7,7 @@
 <html lang="es">
 
 <head>
-   <title>Menu Principal</title>
+   <title>SISMLV - Login</title>
 	<?php require_once 'meta_tags.php';?>
    <?php require_once 'libs_css.php';?>
    <?php require_once 'font_awesome.php';?>
@@ -35,7 +35,7 @@
 				<br>
 				<div class="row">
 					<div class="col-12">
-						<form action="iniciar.php" method="post" class="form">
+						<form action="iniciaradmin.php" method="post" class="form">
 							<div class="form-group">
 								<div class="col-12">
 									<label for="usuario" class="etiqueta">Usuario:</label>

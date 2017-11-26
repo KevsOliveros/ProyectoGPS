@@ -50,7 +50,7 @@
                                        
                                        //echo "<td> <a href=\"usuario-editar.php?nom_usr=".$row['nom_usuario']."&nom_d_usr=".$row['nombre_del_usuario']."\"><div class=\"btn btn-primary\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </div></a> </td>";
                                        
-                                       echo "<td><div class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#modal-usuario-editar\" onclick=\"funcionEditar('".$row['nom_usuario']."', '".$row['nombre_del_usuario']."')\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </div></td>";
+                                       echo "<td><div class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#modal-usuario-editar\" onclick=\"funcionEditar('".$row['nom_usuario']."', '".$row['pass_usuario']."', '".$row['nombre_del_usuario']."')\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </div></td>";
 
                                        echo "<td> <a href=\"eliminarusuario.php?nom_usr=".$row['nom_usuario']."\">
                                        <div class=\"btn btn-danger\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i> </div></a> </td>";
@@ -69,10 +69,11 @@
     
     <?php require_once 'modal-usuario-editar.php'; ?>
 <script>
-   function funcionEditar(nombre, nombres) {
-      $("#almacenOriginal").attr("value", nombre);
+   function funcionEditar(usuario, pass, nombre) {
+      $("#usuarioOriginal").attr("value", usuario)
+      $("#usuarioEditar").attr("value", usuario);
+      $("#passEditar").attr("value", pass);
       $("#nombreEditar").attr("value", nombre);
-      $("#direccionEditar").attr("placeholder", direccion);
    }
 </script>
 </body>
