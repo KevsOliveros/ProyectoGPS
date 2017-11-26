@@ -14,7 +14,7 @@
 						<label for="nombre_del_usuario">Nombre(s):</label>
 					</div>
 					<div class="col-12 col-md-9">
-						<input type="text" name="nombre_del_usuario" class="form-control" placeholder="Juan Jose">
+						<input autofocus type="text" name="nombre_del_usuario" class="form-control" placeholder="Juan Jose">
 					</div>
 				</div>
 			</div>
