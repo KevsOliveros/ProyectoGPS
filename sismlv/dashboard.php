@@ -289,7 +289,40 @@
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </a>
-
+                <div id="dsubmenuGrafica">
+                    <a class="row dsubOpcionMenu" href="i-grafica-deptoarea.php" id="">
+                        <div class="col-2">
+                            <span class="icon-grafica iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Departamento y Área</span>
+                        </div>
+                    </a>
+                    <a class="row dsubOpcionMenu" href="i-grafica-almacen.php" id="">
+                        <div class="col-2">
+                            <span class="icon-grafica iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Almacén</span>
+                        </div>
+                    </a>
+                    <a class="row dsubOpcionMenu" href="i-grafica-correctivo.php" id="">
+                        <div class="col-2">
+                            <span class="icon-grafica iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Mantenimiento correctivo</span>
+                        </div>
+                    </a>
+                    <a class="row dsubOpcionMenu" href="i-grafica-preventivo.php" id="">
+                        <div class="col-2">
+                            <span class="icon-grafica iconoOpcion"></span>
+                        </div>
+                        <div class="col-10">
+                            <span class="dtituloSubOpcionMenu">Mantenimiento preventivo</span>
+                        </div>
+                    </a>
+                </div>
                 <!-- Auditorías -->
                 <a class="row opcionDashboard" href="#">
                     <div class="col-2">

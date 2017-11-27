@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Gráfica Departamento y área</title>
+    <?php require_once 'meta_tags.php';?>
+    <?php require_once 'libs_css.php';?>
+    <?php require_once 'font_awesome.php';?>
+    <?php require_once 'google_fonts.php';?>
+    <?php require_once 'favicon.php';?>
+    <link rel="stylesheet" href="libs/iconos/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/formularios.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <style>
+    canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" id="principal">
+        <header>
+            <?php require_once 'top.php';?>
+            <div class="row">
+                <div class="col-12 col-sm-0" id="ajuste-top"><br><br></div>
+            </div>
+        </header>
+        <div class="row" id="div_main">
+            <?php require_once 'dashboard.php';?>
+            <div class="col-12 col-sm-9 col-lg-10" id="main">
+                <?php require_once 'grafica-depto.php'?>
+            </div>
+        </div>
+    </div>
+    <?php require_once 'scripts.php';?>
+    <script src="js/data-table.js"></script>
+    
+</body>
+</html>
