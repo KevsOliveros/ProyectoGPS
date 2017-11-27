@@ -1,14 +1,14 @@
-$(document).ready(function() {
-   $("#btnDatosCliente").click(function() {
+$(d$(document).ready(function() {
+   $("#btn-articulo").click(function() {
       //Mostrar datos del cliente
-      $("#datosCliente").css("display", "block");
+      $("#formularioArticulo").css("display", "block");
       //Ocultar otros datos
-      $("#datosOtros").css("display", "none");
+      $("#formularioInventario").css("display", "none");
    });
-   $("#btnDatosOtros").click(function() {
+   $("#btn-inventario").click(function() {
       //Ocultar datos del cliente
-      $("#datosCliente").css("display", "none");
+      $("#formularioArticulo").css("display", "none");
       //Ocultar otros datos
-      $("#datosOtros").css("display", "block");
+      $("#formularioInventario").css("display", "block");
    });
 });

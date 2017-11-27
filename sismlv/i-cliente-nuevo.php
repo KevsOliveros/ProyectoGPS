@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Editar Artículo</title>
+    <title>Nuevo Cliente</title>
     <?php require_once 'meta_tags.php';?>
     <?php require_once 'libs_css.php';?>
     <?php require_once 'font_awesome.php';?>
@@ -25,12 +25,12 @@
         <div class="row" id="div_main">
             <?php require_once 'dashboard.php';?>
             <div class="col-12 col-sm-9 col-lg-10" id="main">
-                <?php require_once 'articulo-editar2.php'?>
+                <?php require_once 'cliente-nuevo.php'?>
             </div>
         </div>
     </div>
     <?php require_once 'scripts.php';?>
-    <!-- script mostrar/ocultar secciones de nuevo articulo -->
+    <script src="js/data-table.js"></script>
     <script src="js/nuevo-articulo.js"></script>
 </body>
 </html>

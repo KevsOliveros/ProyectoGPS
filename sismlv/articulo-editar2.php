@@ -1,7 +1,7 @@
  <div class="row" id="ventanaTitulo">
 	<div class="col-12">
-		<span class="icon-eliminar"></span>
-		<span>Eliminar Artículo</span>
+		<span class="icon-editar"></span>
+		<span>Editar Artículo</span>
 	</div>
 </div>
 <br>
@@ -42,7 +42,7 @@
                                        echo "<td>3</td>";
                                        echo "<td>".$row['unidad_medida_articulo']."</td>";
                                        
-                                       echo "<td><a href=\"eliminararticulo.php?cod_art=".$row['codigo_articulo']."\" class=\"btn btn-danger\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></a></td>";
+                                       echo "<td><a href=\"i-articulo-editar2.php?cod_art=".$row['codigo_articulo']."\" class=\"btn btn-primary\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></a></td>";
                                        
                                        echo "</tr>";
                                    }

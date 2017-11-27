@@ -1,4 +1,3 @@
-           <?php session_start(); $nombre = $_SESSION['nombre_del_user']; ?>
                <div class="row">
                 <div class="col-12" id="encabezado">
                     <div class="row">
