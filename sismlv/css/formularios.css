@@ -19,6 +19,10 @@
 	display: none;
 }
 
+#formularioOtros {
+    display: none;
+}
+
 #tabla-contenedor {
 	margin: 0;
 	padding: 0;
