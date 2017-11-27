@@ -338,7 +338,7 @@
                 </a>
 
                 <!-- Bitácora -->
-                <a class="row opcionDashboard" href="#">
+                <a class="row opcionDashboard" href="bitacora.php">
                     <div class="col-2">
                         <span class="icon-bitacora iconoOpcion"></span>
                     </div>
