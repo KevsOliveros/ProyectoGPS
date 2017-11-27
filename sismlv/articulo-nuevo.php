@@ -63,7 +63,7 @@
                         <label for="departamento">Departamento:</label>
                      </div>
                      <div class="col-10 col-sm-7">
-                        <select class="form-control custom-select" name="departamento" required="required"  onchange="OnSelectionChange(this)">
+                        <select class="form-control custom-select" name="departamento" required="required">
                            <option value="" disabled selected>-- Seleccione una opción --</option>
                            <?php
                                     $cont = 0;
@@ -90,7 +90,8 @@
                      <div class="col-12 col-sm-8">
                         <select class="form-control custom-select" name="area" required="required">
                          <option value="" disabled selected>-- Seleccione una opción --</option>
-                         <?php
+                         
+                                   <?php
                                     $cont2 = 0;
                                    while (sizeof($areas) - 1 >= $cont2) {
                                        //if($deptos[$cont2] != $deptos[$cont2 - 1]){

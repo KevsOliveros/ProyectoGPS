@@ -25,7 +25,7 @@
         <div class="row" id="div_main">
             <?php require_once 'dashboard.php';?>
             <div class="col-12 col-sm-9 col-lg-10" id="main">
-                <?php require_once 'articulo-editar2.php'?>
+                <?php  require_once "articulo-editar.php"; ?>
             </div>
         </div>
     </div>

@@ -15,7 +15,7 @@ $usr = $_SESSION['current_user'];
 require_once 'conexion.php'; 
 
 //$sql = "INSERT INTO usuario (nombre_del_usuario, nom_usuario, pass_usuario) VALUES (AES_ENCRYPT('$nombre',UNHEX('000')), AES_ENCRYPT('$usuario',UNHEX('000')), AES_ENCRYPT('$contra',UNHEX('000')))";
-
+ 
 $sql = "INSERT INTO `articulo`
 (`departamento_articulo`, `area_articulo`, `descripcion_articulo`, `codigo_articulo`, `nombre_proveedor`, `fecha_instalacion_articulo`, `tipo_mantenimiento_articulo`, `fecha_mantenimiento_articulo`, `estatus_articulo`, `precio_costo_articulo`, `precio_venta_articulo`, `impuesto_articulo`, `unidad_medida_articulo`, `vida_util_articulo`, `notas_articulo`, `nom_usuario`) 
 VALUES 
@@ -33,14 +33,15 @@ AES_ENCRYPT('$precio_venta_unitario',UNHEX('000')),
 AES_ENCRYPT('$impuesto',UNHEX('000')),
 AES_ENCRYPT('pieza',UNHEX('000')),
 AES_ENCRYPT('12 meses',UNHEX('000')),
-AES_ENCRYPT('$unidad_medida',UNHEX('000')),
+AES_ENCRYPT('$nota',UNHEX('000')),
 AES_ENCRYPT('$usr',UNHEX('000')))";
 
 if ($conn->query($sql) === TRUE) {
     require_once 'cargando.php';
-    echo "<script>document.location.href='i-eliminar-articulo.php';</script>";
+    echo "<script>document.location.href='i-articulo-editar.php';</script>";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "<script>alert('Ocurrio algun error. puede que haya ingresado valores erroneos o codigos repetidos')</script>";
+    echo "<script>history.go(-1)</script>";
 }
 
 $conn->close();
