@@ -54,7 +54,7 @@
 								   $area.
 								"</td>".
 								"<td>".
-									"<a href='eliminardepto.php?nom_alm=\"$departamento\"'>".
+									"<a href='eliminardepto.php?nom_alm=\"$departamento\"&nom_area=\"$area\"'>".
 										"<div class=\"btn btn-danger\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i> </div>".
 									"</a>".
 								"</td>".

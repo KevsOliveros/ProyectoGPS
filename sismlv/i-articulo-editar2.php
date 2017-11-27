@@ -32,5 +32,7 @@
     <?php require_once 'scripts.php';?>
     <!-- script mostrar/ocultar secciones de nuevo articulo -->
     <script src="js/nuevo-articulo.js"></script>
+    <script src="js/data-table.js"></script>
+
 </body>
 </html>
