@@ -324,18 +324,6 @@
                         </div>
                     </a>
                 </div>
-                <!-- Auditorías -->
-                <a class="row opcionDashboard" href="#">
-                    <div class="col-2">
-                        <span class="icon-auditoria iconoOpcion"></span>
-                    </div>
-                    <div class="col-8">
-                        Auditorías
-                    </div>
-                    <!-- <div class="col-2">
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </div> -->
-                </a>
 
                 <!-- Bitácora -->
                 <a class="row opcionDashboard" href="bitacora.php">
