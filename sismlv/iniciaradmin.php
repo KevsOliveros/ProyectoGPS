@@ -10,7 +10,7 @@ if(mysqli_num_rows($result)>0  && mysqli_num_rows($result)<2){
      
     $_SESSION['token_Id']=1;
     $_SESSION['current_user'] = $usuario;
-    $_SESSION['nombre_del_user'] = "Directo";
+    $_SESSION['nombre_del_user'] = "Adan el Admin";
    echo "<script>document.location.href='menuadmin.php';</script>";
     
      

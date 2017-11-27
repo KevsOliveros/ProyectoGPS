@@ -11,7 +11,7 @@ if(mysqli_num_rows($result)>0  && mysqli_num_rows($result)<2){
     $_SESSION['token_Id']=1;
     $_SESSION['current_user'] = $usuario;
     //$_SESSION['nombre_del_user'] = $row['nombre_del_usuario'];
-    $_SESSION['nombre_del_user'] = "pruebadirecta";
+    $_SESSION['nombre_del_user'] = "Ramon";
     
    echo "<script>document.location.href='menu.php';</script>";
     
