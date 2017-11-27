@@ -108,7 +108,7 @@
                 </a>
                 <div id="dsubmenuDeptoArea">
                     <!-- Nuevo Departamento y área -->
-                    <a class="row dsubOpcionMenu" href="i-depto-nuevo.php" id="">
+                    <a class="row dsubOpcionMenu" href="i-depto-nuevo.php?primera=1&nom_area=0&eliminar=0" id="">
                         <div class="col-2">
                             <span class="icon-nuevo iconoOpcion"></span>
                         </div>
