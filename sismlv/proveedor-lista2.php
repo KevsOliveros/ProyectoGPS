@@ -18,10 +18,10 @@
    mysqli_set_charset($conexion, "utf8");
    $sql = "SELECT nombre_proveedor,
          contacto_proveedor,
-         nombrecontacto_proveedor,
-         direccion_proveedor,
-         telefonop_proveedor,
-         telefonoa_proveedor,
+         nombre_contacto_proveedor,
+         
+         telefono_p_proveedor,
+         telefono_a_proveedor,
          fax_proveedor,
          email_proveedor
          FROM proveedor";
@@ -36,7 +36,7 @@
          <thead>
             <tr>
                <th>Proveedor</th>
-               <th>Dirección</th>
+               
                <th>Teléfono</th>
                <th>Editar</th>
                <th>Eliminar</th>
@@ -48,7 +48,7 @@
 					echo "Error al ejecutar la consulta";
 				else {
 				   // asociar variables
-				   $estatus = mysqli_stmt_bind_result($resultado, $nombre_proveedor, $contacto_proveedor, $nombrecontacto_proveedor,  $direccion_proveedor, $telefonop_proveedor, $telefonoa_proveedor, $fax_proveedor, $email_proveedor);
+				   $estatus = mysqli_stmt_bind_result($resultado, $nombre_proveedor, $contacto_proveedor, $nombre_contacto_proveedor,  $telefonop_proveedor, $telefonoa_proveedor, $fax_proveedor, $email_proveedor);
 				   // leer resultados
 					while(mysqli_stmt_fetch($resultado)) {
 						echo
@@ -56,14 +56,12 @@
 								"<td>".
 								   $nombre_proveedor.
 								"</td>".
-								"<td>".
-								   $direccion_proveedor.
-                                                "</td>".
+								
                                                 "<td>".
                                                 $telefonop_proveedor.
                                                 "</td>".
 								"<td>".
-									   "<div class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#modal-proveedor-editar\" onclick=\"funcionEditar('$nombre_proveedor', '$contacto_proveedor', '$nombrecontacto_proveedor', '$direccion_proveedor', '$telefonop_proveedor', '$telefonoa_proveedor', '$fax_proveedor', '$email_proveedor')\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </div>".
+									   "<div class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#modal-proveedor-editar\" onclick=\"funcionEditar('$nombre_proveedor', '$contacto_proveedor', '$nombre_contacto_proveedor', '$telefonop_proveedor', '$telefonoa_proveedor', '$fax_proveedor', '$email_proveedor')\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </div>".
 								"</td>".
 								"<td>".
 									"<a href='eliminarproveedor.php?nom_proveedor=\"$nombre_proveedor\"'>".

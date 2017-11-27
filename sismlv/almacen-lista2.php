@@ -72,7 +72,6 @@ $dir;
       </table>
    </div>
 </div>
-
 <?php require_once 'modal-almacen-editar.php'; ?>
 <script>
    function funcionEditar(nombre, direccion) {

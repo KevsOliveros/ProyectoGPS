@@ -108,7 +108,7 @@
                 </a>
                 <div id="dsubmenuDeptoArea">
                     <!-- Nuevo Departamento y área -->
-                    <a class="row dsubOpcionMenu" href="depto-nuevo.php" id="">
+                    <a class="row dsubOpcionMenu" href="i-depto-nuevo.php" id="">
                         <div class="col-2">
                             <span class="icon-nuevo iconoOpcion"></span>
                         </div>
@@ -291,30 +291,30 @@
                 </a>
 
                 <!-- Auditorías -->
-                <a class="row opcionDashboard" href="#">
+                <!-- <a class="row opcionDashboard" href="#">
                     <div class="col-2">
                         <span class="icon-auditoria iconoOpcion"></span>
                     </div>
                     <div class="col-8">
                         Auditorías
                     </div>
-                    <!-- <div class="col-2">
+                    <div class="col-2">
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </div> -->
-                </a>
+                    </div> 
+                </a> -->
 
                 <!-- Bitácora -->
-                <a class="row opcionDashboard" href="#">
+                <!--<a class="row opcionDashboard" href="#">
                     <div class="col-2">
                         <span class="icon-bitacora iconoOpcion"></span>
                     </div>
                     <div class="col-8">
                         Bitácora
                     </div>
-                    <!-- <div class="col-2">
+                     <div class="col-2">
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </div> -->
-                </a>
+                    </div> 
+                </a> -->
             </div>
 
             <?php require_once 'modal-informe-almacen-depto.php'; ?>
