@@ -1,4 +1,5 @@
-            <div class="col-10 col-sm-3 col-lg-2" id="dashboard">
+            <?php require_once 'verificarusuario.php';?>
+                           <div class="col-10 col-sm-3 col-lg-2" id="dashboard">
                 <!-- Inventario -->
                 <a class="row opcionDashboard" href="#" id="dinventario">
                     <div class="col-2">
