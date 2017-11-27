@@ -11,14 +11,14 @@
         <div class="container-fluid">
          <div class="row">
                   <div class="col-12">
-                     <form action="editaralmacen.php" method="post" class="form">
+                     <form action="editarusuario.php" method="post" class="form">
                         <div class="form-group">
                            <div class="row">
                               <div class="col-12 col-lg-4">
                                  <label for="nombre">Usuario:</label>
                               </div>
                                <div class="col-12 col-lg-8">
-                                 <input class="form-control" id="usuarioEditar" type="text" name="usuario" required="required">
+                                 <input class="form-control" id="usuarioEditar" type="text" name="usuarioeditar" required="required">
                               </div>
                            </div>
                         </div>
@@ -28,7 +28,7 @@
                                  <label for="nombre">Contraseña:</label>
                               </div>
                                <div class="col-12 col-lg-8">
-                                 <input class="form-control" id="passEditar" type="text" name="pass" required="required">
+                                 <input class="form-control" id="passEditar" type="text" name="pass" required="required" disabled>
                               </div>
                            </div>
                         </div>
@@ -38,11 +38,11 @@
                                  <label for="nombre">Nombre:</label>
                               </div>
                                <div class="col-12 col-lg-8">
-                                 <input class="form-control" id="nombreEditar" type="text" name="nombre" required="required">
+                                 <input class="form-control" id="nombreEditar" type="text" name="nombreeditar" required="required">
                               </div>
                            </div>
                         </div>
-                        <input type="hidden" id="usuarioOriginal" name="usuarioOriginal">
+                        <input type="hidden" id="usuarioOriginal" name="nom_usr">
                         <input type="submit" class="btn btn-success col-12 col-sm-4 offset-sm-1" value="Aceptar" style="margin-bottom: 1%;">
                         <input type="reset" class="btn btn-danger col-12 col-sm-4 offset-sm-1" value="Cancelar" style="margin-bottom: 1%;">
                      </form>
