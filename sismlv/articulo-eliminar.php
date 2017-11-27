@@ -10,7 +10,7 @@
 		<table class="table table-bordered table-hover text-center">
       	<thead class="thead-dark">
          	<tr>
-					<th>Eliminar</th>
+				
             	<th>Artículo</th>
                <th>Descripción</th>
                <th>Departamento</th>
@@ -20,6 +20,7 @@
                <th>Precio</th>
                <th>Cantidad</th>
                <th>Medida</th>
+               <th>Eliminar</th>
             </tr>
          </thead>
          <?php
@@ -30,8 +31,7 @@
       	<tbody>
            <?php
                                    while ($row = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
-                                       echo "<td><a href=\"eliminararticulo.php?cod_art=".$row['codigo_articulo']."\" class=\"btn btn-danger\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></a></td>";
-                                       
+                                                                             
                                        echo "<td>".$row['codigo_articulo']."</td>";
                                        echo "<td>".$row['descripcion_articulo']."</td>";
                                        echo "<td>".$row['departamento_articulo']."</td>";
@@ -41,6 +41,8 @@
                                        echo "<td>".$row['precio_venta_articulo']."</td>";
                                        echo "<td>3</td>";
                                        echo "<td>".$row['unidad_medida_articulo']."</td>";
+                                       
+                                       echo "<td><a href=\"eliminararticulo.php?cod_art=".$row['codigo_articulo']."\" class=\"btn btn-danger\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></a></td>";
                                        
                                        echo "</tr>";
                                    }

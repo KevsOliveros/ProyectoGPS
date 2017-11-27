@@ -15,6 +15,24 @@
 <div class="row" id="formulario">
    <div class="col-12">
       <br>
+      <?php             
+                        
+                      require 'conn.php';
+                      $query = mysqli_query($conn,"SELECT 
+                      AES_DECRYPT(nombre_depto,UNHEX('000')) AS nombre_depto,
+                      AES_DECRYPT(nombre_area,UNHEX('000')) AS nombre_area
+                      FROM deptoarea WHERE nom_usuario = AES_ENCRYPT('".$_SESSION['current_user']."',UNHEX('000')) ORDER BY nombre_depto, nombre_area");
+                       $deptos = array();
+                        $areas = array();
+                    $pruebas = array("uno","dos","tres");
+                        while ($row = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
+                            $deptos[] = $row['nombre_depto'];
+                            $areas[]  = $row['nombre_area'];
+                        }
+       
+                    ?>
+                 <?php//require 'conn.php';$query = mysqli_query($conn,"SELECT DISTINCTAES_DECRYPT(nombre_depto,UNHEX('000')) AS nombre_depto, AES_DECRYPT(nombre_area,UNHEX('000')) AS nombre_area FROM deptoarea WHERE nom_usuario = AES_ENCRYPT('".$_SESSION['current_user']."',UNHEX('000'))");
+                    ?>
       <form action="nuevoarticulo.php" class="form" id="formularioArticulo" method="post">
          <div>               
             <fieldset>
@@ -45,8 +63,16 @@
                         <label for="departamento">Departamento:</label>
                      </div>
                      <div class="col-10 col-sm-7">
-                        <select class="form-control custom-select" name="departamento" required="required">
+                        <select class="form-control custom-select" name="departamento" required="required"  onchange="OnSelectionChange(this)">
                            <option value="" disabled selected>-- Seleccione una opción --</option>
+                           <?php
+                                    $cont = 0;
+                                   while (sizeof($deptos) - 1 >= $cont) {
+                                       if($deptos[$cont] != $deptos[$cont - 1]){
+                                       echo "<option value=\"".$deptos[$cont]."\">".$deptos[$cont]."</option>";
+                                       }
+                                       $cont = $cont + 1;
+                                   } ?>
                         </select>
                      </div>
                      <div class="col-1 col-sm-1">
@@ -54,6 +80,8 @@
                      </div>
                   </div>
                </div>
+               
+               
                <div class="form-group">
                   <div class="row">
                      <div class="col-12 col-sm-4">
@@ -61,11 +89,22 @@
                      </div>
                      <div class="col-12 col-sm-8">
                         <select class="form-control custom-select" name="area" required="required">
-                           <option value="" disabled selected>-- Seleccione una opción --</option>
+                         <option value="" disabled selected>-- Seleccione una opción --</option>
+                         <?php
+                                    $cont2 = 0;
+                                   while (sizeof($areas) - 1 >= $cont2) {
+                                       //if($deptos[$cont2] != $deptos[$cont2 - 1]){
+                                       echo "<option value=\"".$areas[$cont2]."\">".$deptos[$cont2].",".$areas[$cont2]."</option>";
+                                       //}
+                                       $cont2 = $cont2 + 1;
+                                   } ?>
                         </select>
                      </div>
                   </div>
-               </div>  
+               </div> 
+               
+                
+                  
             </fieldset>
             <fieldset>
                <legend>Precios</legend>
@@ -103,7 +142,7 @@
                      <div class="col-12 col-sm-8">
                         <div class="input-group">
                            <span class="input-group-addon">$</span>
-                           <input type="number" class="form-control" name="costo_compra_unitario" placeholder="p. ej., 16.00">
+                           <input type="number" class="form-control" name="impuesto" placeholder="p. ej., 16.00">
                         </div>
                      </div>
                   </div>
