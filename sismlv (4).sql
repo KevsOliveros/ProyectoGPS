@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2017 at 05:58 PM
+-- Generation Time: Nov 27, 2017 at 06:02 PM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `bitacora` (
   `fecha` varchar(200) NOT NULL,
   `nom_usuario` varchar(200) DEFAULT NULL,
   `dispositivo` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `bitacora`
@@ -184,7 +184,17 @@ INSERT INTO `bitacora` (`id_movimiento`, `descripcion`, `fecha`, `nom_usuario`, 
 (18, 'insert en proveedor Kitlabd', '2017-11-27 10:54:43', NULL, NULL),
 (19, 'insert en proveedor Phillipsd', '2017-11-27 10:54:43', NULL, NULL),
 (20, 'insert en proveedor Scorpion Scientificd', '2017-11-27 10:54:43', NULL, NULL),
-(23, 'insert en usuario ©12hï0¡Øÿ°aÎ*Yw', '2017-11-27 10:55:46', NULL, NULL);
+(23, 'insert en usuario ©12hï0¡Øÿ°aÎ*Yw', '2017-11-27 10:55:46', NULL, NULL),
+(24, 'insert en departamento Š|içõ>jàµâÁšª y area j\\fõ¡?Uåð ‡öë', '2017-11-27 11:02:27', NULL, NULL),
+(25, 'insert en departamento Š|içõ>jàµâÁšª y area óDg\\£2>v_Ž£*!.ÕÑ‡IZ¬\\„Ý°Ê+]Æ', '2017-11-27 11:02:27', NULL, NULL),
+(26, 'insert en departamento h)VÓAO¢#¯®z˜Š»° y area h)VÓAO¢#¯®z˜Š»°', '2017-11-27 11:02:27', NULL, NULL),
+(27, 'insert en departamento „Oþò/ìí;\\ÿ9­Ä y area ;v*iÖöž²—/E©*R_', '2017-11-27 11:02:27', NULL, NULL),
+(28, 'insert en departamento „Oþò/ìí;\\ÿ9­Ä y area êrÐÜŠk©—ð:;(Z', '2017-11-27 11:02:27', NULL, NULL),
+(29, 'insert en departamento „Oþò/ìí;\\ÿ9­Ä y area íC“a4zYöi8½ŽêŒ^', '2017-11-27 11:02:27', NULL, NULL),
+(30, 'insert en departamento „Oþò/ìí;\\ÿ9­Ä y area _÷ÆŸ``c%)PÑYô', '2017-11-27 11:02:27', NULL, NULL),
+(31, 'insert en departamento ‘”nHÞ¨&HsúaéÅY3ËT§ñæ(L1ú— y area #ÅN3WKo¬òUØ{¦3', '2017-11-27 11:02:27', NULL, NULL),
+(32, 'insert en departamento ³æ«=ÓÚEÛC~´0xªðë y area 4ð‰ÙMJ1ŸöÅw*"-ÒY', '2017-11-27 11:02:27', NULL, NULL),
+(33, 'insert en departamento ³æ«=ÓÚEÛC~´0xªðë y area ³æ«=ÓÚEÛC~´0xªðë', '2017-11-27 11:02:27', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -283,12 +293,22 @@ INSERT INTO `deptoarea` (`nombre_depto`, `nombre_area`, `nom_usuario`) VALUES
 ('\ntÍ°ÀHyYüë )^Ù', 'ê%¨ÿX‘+Y€Òéµ…', 'IŒÊÁâŽ.…&ô‰Å'),
 ('\ntÍ°ÀHyYüë )^Ù', 'nzÆhƒ_*¢®:òª°D', 'IŒÊÁâŽ.…&ô‰Å'),
 ('\ntÍ°ÀHyYüë )^Ù', '†ý”•Y DFCM–Ë', 'IŒÊÁâŽ.…&ô‰Å'),
+('Š|içõ>jàµâÁšª', 'j\\fõ¡?Uåð ‡öë', 'IŒÊÁâŽ.…&ô‰Å'),
+('Š|içõ>jàµâÁšª', 'óDg\\£2>v_Ž£*!.ÕÑ‡IZ¬\\„Ý°Ê+]Æ', 'IŒÊÁâŽ.…&ô‰Å'),
 ('*==ŒÞ’šT´^ÛÏüzç…', 'û…7kj£Q;âÆäˆ¦g', 'IŒÊÁâŽ.…&ô‰Å'),
 ('*==ŒÞ’šT´^ÛÏüzç…', '”}þó\n%\0á‚"Øp§™Š“', 'IŒÊÁâŽ.…&ô‰Å'),
 ('*==ŒÞ’šT´^ÛÏüzç…', ' ®Ö>0 <ã5[[sF¾*', 'IŒÊÁâŽ.…&ô‰Å'),
 ('-W¨ÿžÛƒÀèœ¦ÍXð', 'äxARò‰¯í–6vÏ˜w¢', 'IŒÊÁâŽ.…&ô‰Å'),
 ('-W¨ÿžÛƒÀèœ¦ÍXð', 'o6ò½öÚr“!‰ýÄ', 'IŒÊÁâŽ.…&ô‰Å'),
-('-W¨ÿžÛƒÀèœ¦ÍXð', 'uÚŒdº8rÁù|d®Òø', 'IŒÊÁâŽ.…&ô‰Å');
+('-W¨ÿžÛƒÀèœ¦ÍXð', 'uÚŒdº8rÁù|d®Òø', 'IŒÊÁâŽ.…&ô‰Å'),
+('h)VÓAO¢#¯®z˜Š»°', 'h)VÓAO¢#¯®z˜Š»°', 'IŒÊÁâŽ.…&ô‰Å'),
+('„Oþò/ìí;\\ÿ9­Ä', ';v*iÖöž²—/E©*R_', 'IŒÊÁâŽ.…&ô‰Å'),
+('„Oþò/ìí;\\ÿ9­Ä', 'êrÐÜŠk©—ð:;(Z', 'IŒÊÁâŽ.…&ô‰Å'),
+('„Oþò/ìí;\\ÿ9­Ä', 'íC“a4zYöi8½ŽêŒ^', 'IŒÊÁâŽ.…&ô‰Å'),
+('„Oþò/ìí;\\ÿ9­Ä', '_÷ÆŸ``c%)PÑYô', 'IŒÊÁâŽ.…&ô‰Å'),
+('‘”nHÞ¨&HsúaéÅY3ËT§ñæ(L1ú—', '#ÅN3WKo¬òUØ{¦3', 'IŒÊÁâŽ.…&ô‰Å'),
+('³æ«=ÓÚEÛC~´0xªðë', '4ð‰ÙMJ1ŸöÅw*"-ÒY', 'IŒÊÁâŽ.…&ô‰Å'),
+('³æ«=ÓÚEÛC~´0xªðë', '³æ«=ÓÚEÛC~´0xªðë', 'IŒÊÁâŽ.…&ô‰Å');
 
 --
 -- Triggers `deptoarea`
@@ -594,7 +614,7 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT for table `bitacora`
 --
 ALTER TABLE `bitacora`
-  MODIFY `id_movimiento` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=24;
+  MODIFY `id_movimiento` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=34;
 --
 -- AUTO_INCREMENT for table `cliente`
 --
