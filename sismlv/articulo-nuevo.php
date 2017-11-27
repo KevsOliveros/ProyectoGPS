@@ -1,4 +1,4 @@
-<div class="row" id="ventanaTitulo">
+ <div class="row" id="ventanaTitulo">
 	<div class="col-12">
 		<span class="icon-nuevo"></span>
 		<span>Nuevo Artículo</span>
@@ -15,7 +15,7 @@
 <div class="row" id="formulario">
    <div class="col-12">
       <br>
-      <form action="" class="form" id="formularioArticulo">
+      <form action="nuevoarticulo.php" class="form" id="formularioArticulo" method="post">
          <div>               
             <fieldset>
                <legend>General</legend>

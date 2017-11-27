@@ -1,4 +1,4 @@
-<div class="row" id="ventanaTitulo">
+ <div class="row" id="ventanaTitulo">
 	<div class="col-12">
 		<span class="icon-editar"></span>
 		<span>Editar Artículo</span>

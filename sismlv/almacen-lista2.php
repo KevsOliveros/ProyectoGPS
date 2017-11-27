@@ -20,7 +20,7 @@ $dir;
 	//Selecionar db
    mysqli_select_db($conexion, $dbname) or die("Error al conectar con la BD");
    mysqli_set_charset($conexion, "utf8");
-   $sql = "SELECT nombre_almacen, direccion_almacen FROM almacen";
+   $sql = "SELECT nombre_almacen, direccion_almacen FROM almacen WHERE nom_usuario = AES_ENCRYPT('".$_SESSION['current_user']."',UNHEX('000'))";
    // preparar consulta
    $resultado = mysqli_prepare($conexion, $sql);
    // ejecutar sql
