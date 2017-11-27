@@ -1,3 +1,3 @@
 <?php
-$conn=mysqli_connect("localhost","root","Privada","sismlv");
+$conn=mysqli_connect("localhost","root","","sismlv");
 ?>

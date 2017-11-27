@@ -14,8 +14,8 @@ $nom_usuario=$_SESSION['current_user'];
 
 require_once 'conexion.php';
 
-$sql = "INSERT INTO proveedor (nombre_proveedor, contacto_proveedor, nombrecontacto_proveedor, direccion_proveedor, telefonop_proveedor, telefonoa_proveedor, fax_proveedor, email_proveedor, nom_usuario)
-VALUES ('$nombre_p', '$persona_p', '$nombre_contacto_p', '$direccion', '$telefonop_p', '$telefonoa_p', '$fax_p', '$correo_p', '$nom_usuario')";
+$sql = "INSERT INTO proveedor (nombre_proveedor, contacto_proveedor, nombre_contacto_proveedor, telefono_p_proveedor, telefono_a_proveedor, fax_proveedor, email_proveedor, nom_usuario)
+VALUES ('$nombre_p', '$persona_p', '$nombre_contacto_p', '$telefonop_p', '$telefonoa_p', '$fax_p', '$correo_p', '$nom_usuario')";
 
 if ($conn->query($sql) === TRUE) {
     require_once 'cargando.php';

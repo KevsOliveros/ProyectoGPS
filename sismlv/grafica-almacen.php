@@ -10,7 +10,7 @@ $conexion = mysqli_connect($servername, $username, $password, $dbname);
     </div>
     <script>
         new Chart(document.getElementById("canvas"), {
-            type: 'pie',
+            type: 'bar',
             data: {
               labels: [
                 <?php
