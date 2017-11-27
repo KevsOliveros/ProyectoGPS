@@ -3,7 +3,7 @@
 <html lang="es">
 
 <head>
-    <title>Lista de almacenes</title>
+    <title>Lista de Departamento y Área</title>
     <?php require_once 'meta_tags.php';?>
     <?php require_once 'libs_css.php';?>
     <?php require_once 'font_awesome.php';?>
@@ -26,7 +26,7 @@
         <div class="row" id="div_main">
             <?php require_once 'dashboard.php';?>
             <div class="col-12 col-sm-9 col-lg-10" id="main">
-                <?php require_once 'almacen-lista2.php'?>
+                <?php require_once 'deptoarea-lista.php'?>
             </div>
         </div>
     </div>

@@ -10,17 +10,20 @@ $i=0;
 $numero_areas = count($areas);
 while ($i < $numero_areas) {
    $sql = "INSERT INTO deptoarea (nombre_depto, nombre_area, nom_usuario) VALUES (
-      '$nombre_depto',
-      '$areas[$i]',
-      '$nom_usuario'
+      AES_ENCRYPT('$nombre_depto',UNHEX('000')),
+      AES_ENCRYPT('$areas[$i]',UNHEX('000')),
+      AES_ENCRYPT('$nom_usuario',UNHEX('000'))
    )";
    if ($conn->query($sql) === TRUE) {
-       require_once 'cargando.php';
-       echo "<script>document.location.href='i-proveedor-lista.php';</script>";
    } else {
        echo "Error: " . $sql . "<br>" . $conn->error;
    }
+   $i++;
    
-   $conn->close();
 }
+if($i == $numero_areas) {
+    require_once 'cargando.php';
+    echo "<script>document.location.href='i-deptoarea-lista.php';</script>";
+}
+$conn->close();
 ?>

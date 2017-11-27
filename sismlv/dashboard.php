@@ -108,11 +108,7 @@
                 </a>
                 <div id="dsubmenuDeptoArea">
                     <!-- Nuevo Departamento y área -->
-<<<<<<< HEAD
                     <a class="row dsubOpcionMenu" href="i-depto-nuevo.php?primera=1&nom_area=0&eliminar=0" id="">
-=======
-                    <a class="row dsubOpcionMenu" href="depto-nuevo.php" id="">
->>>>>>> 6e99b9323b9ec2c2741ec54b8d405dd84a6f394f
                         <div class="col-2">
                             <span class="icon-nuevo iconoOpcion"></span>
                         </div>
@@ -121,7 +117,7 @@
                         </div>
                     </a>
                     <!-- Ver Departamento y área -->
-                    <a class="row dsubOpcionMenu" href="depto-lista.php" id="">
+                    <a class="row dsubOpcionMenu" href="i-deptoarea-lista.php" id="">
                         <div class="col-2">
                             <span class="icon-ver iconoOpcion"></span>
                         </div>

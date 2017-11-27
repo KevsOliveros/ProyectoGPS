@@ -31,8 +31,7 @@
                         }
        
                     ?>
-                 <?php//require 'conn.php';$query = mysqli_query($conn,"SELECT DISTINCTAES_DECRYPT(nombre_depto,UNHEX('000')) AS nombre_depto, AES_DECRYPT(nombre_area,UNHEX('000')) AS nombre_area FROM deptoarea WHERE nom_usuario = AES_ENCRYPT('".$_SESSION['current_user']."',UNHEX('000'))");
-                    ?>
+                 
       <form action="nuevoarticulo.php" class="form" id="formularioArticulo" method="post">
          <div>               
             <fieldset>
